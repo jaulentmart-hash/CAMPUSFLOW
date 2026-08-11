@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>CampusFlow — le tableau de bord de l'étudiant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="dot"></span> CampusFlow</div>
+</div>
+
+<!-- ============ ACCUEIL ============ -->
+<div class="page active" id="page-accueil">
+  <div class="id-card">
+    <div class="id-label">Profil étudiant</div>
+    <div class="id-name" id="id-name">Configure ton profil</div>
+    <div class="id-pills" id="id-pills"></div>
+  </div>
+
+  <div class="savings-hero">
+    <div class="label">Économies potentielles identifiées</div>
+    <div class="amount" id="savings-amount">0 €</div>
+    <div class="label" id="savings-count">0 opportunité détectée</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      <span>À faire bientôt</span>
+      <a href="#" class="see-all" data-nav="planning">voir tout →</a>
+    </div>
+    <div id="home-deadlines"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">
+      <span>Opportunités pour toi</span>
+      <a href="#" class="see-all" data-nav="opportunites">voir tout →</a>
+    </div>
+    <div id="home-opportunities"></div>
+  </div>
+
+  <div class="upgrade-banner">
+    <b>CampusFlow Premium</b> — 1,99€/mois : matching complet, toutes les données locales, deadlines établissements, rappels. <a href="#" data-nav="profil" style="color:var(--amber);">En savoir plus →</a>
+  </div>
+</div>
+
+<!-- ============ OPPORTUNITÉS ============ -->
+<div class="page" id="page-opportunites">
+  <div class="section" style="padding-top:20px;">
+    <h2>Opportunités</h2>
+  </div>
+  <div class="filter-row" id="filter-ville"></div>
+  <div class="filter-row" id="filter-categorie"></div>
+  <div class="section" id="opp-list"></div>
+</div>
+
+<!-- ============ PLANNING ============ -->
+<div class="page" id="page-planning">
+  <div class="section" style="padding-top:20px;">
+    <h2>Planning</h2>
+    <p style="color:var(--muted); font-size:13px; margin-top:6px;">Tes démarches classées par urgence.</p>
+  </div>
+  <div class="section">
+    <div class="section-title"><span>🔴 Urgent</span></div>
+    <div id="deadlines-red"></div>
+    <div class="section-title" style="margin-top:18px;"><span>🟠 Cette période</span></div>
+    <div id="deadlines-orange"></div>
+    <div class="section-title" style="margin-top:18px;"><span>🟢 Plus tard</span></div>
+    <div id="deadlines-green"></div>
+  </div>
+</div>
+
+<!-- ============ PROFIL ============ -->
+<div class="page" id="page-profil">
+  <div class="section" style="padding-top:20px;">
+    <h2>Ton profil</h2>
+    <p style="color:var(--muted); font-size:13px; margin-top:6px; margin-bottom:20px;">Plus on en sait, plus le matching est précis.</p>
+
+    <div class="field">
+      <label>Ville d'études</label>
+      <select id="f-ville">
+        <option value="">Choisir une ville</option>
+        <option>Paris</option>
+        <option>Lyon</option>
+        <option>Lille</option>
+        <option>Bordeaux</option>
+        <option>Toulouse</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Âge</label>
+      <input type="number" id="f-age" placeholder="20">
+    </div>
+
+    <div class="field">
+      <label>Niveau d'étude</label>
+      <select id="f-niveau">
+        <option value="">Choisir</option>
+        <option>L1</option><option>L2</option><option>L3</option>
+        <option>M1</option><option>M2</option>
+        <option>BTS 1re année</option><option>BTS 2e année</option>
+        <option>CPGE 1re année</option><option>CPGE 2e année</option>
+        <option>BUT 1re année</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Boursier</label>
+      <div class="toggle-row">
+        <div class="toggle-btn" data-field="boursier" data-value="oui">Oui</div>
+        <div class="toggle-btn active" data-field="boursier" data-value="non">Non</div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Alternant</label>
+      <div class="toggle-row">
+        <div class="toggle-btn" data-field="alternant" data-value="oui">Oui</div>
+        <div class="toggle-btn active" data-field="alternant" data-value="non">Non</div>
+      </div>
+    </div>
+
+    <button class="btn-primary" id="save-profile">Enregistrer mon profil</button>
+
+    <div class="upgrade-banner" style="margin-top:24px; margin-left:0; margin-right:0;">
+      <b>Version Premium</b> — 1,99€/mois<br><br>
+      Débloque : matching complet sur toutes les catégories, données locales détaillées, deadlines par établissement/formation, rappels automatiques.<br><br>
+      <span style="color:var(--muted);">L'intégration de paiement (Stripe) n'est pas encore branchée dans ce prototype — à connecter une fois l'app hébergée.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ DETAIL SHEET ============ -->
+<div class="sheet-overlay" id="sheet-overlay">
+  <div class="sheet">
+    <div class="sheet-close"></div>
+    <div id="sheet-content"></div>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <button class="nav-item active" data-nav="accueil"><span class="nav-icon">🏠</span>Accueil</button>
+  <button class="nav-item" data-nav="opportunites"><span class="nav-icon">🔎</span>Opportunités</button>
+  <button class="nav-item" data-nav="planning"><span class="nav-icon">📅</span>Planning</button>
+  <button class="nav-item" data-nav="profil"><span class="nav-icon">🧑‍🎓</span>Profil</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
