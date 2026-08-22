@@ -65,3 +65,7 @@ Audit matching Grenoble renforcé : critères requis explicites, aucune addition
 
 ## V3.7 — audit profils réels
 Correction structurelle des cursus médecine Grenoble (PASS, DFGSM2, DFGSM3), deadlines rattachées aux bonnes formations et filtrage strict des échéances précises.
+
+
+## V3.8 — formations Grenoble
+Parcours profil refondu et 159 nouvelles entrées cursus/année Grenoble ajoutées à partir des catalogues officiels UGA/IUT/Grenoble INP.

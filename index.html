@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#f5f7fb">
 <title>CampusFlow — ton copilote étudiant</title>
-<link rel="stylesheet" href="style.css?v=3.7">
+<link rel="stylesheet" href="style.css?v=3.8">
 </head>
 <body>
 <header class="app-header">
@@ -91,11 +91,11 @@
       <div class="form-section-title"><span class="step-dot">1</span><div><strong>Informations principales</strong><small>Pour déterminer les dispositifs nationaux et locaux.</small></div></div>
       <div class="form-grid">
         <label class="field"><span>Âge</span><input type="number" id="f-age" min="15" max="99" placeholder="18"></label>
-        <label class="field"><span>Niveau d’étude</span><select id="f-niveau"><option value="">Choisir</option><option>L1</option><option>L2</option><option>L3</option><option>M1</option><option>M2</option><option>BTS 1re année</option><option>BTS 2e année</option><option>CPGE 1re année</option><option>CPGE 2e année</option><option>BUT 1re année</option><option>BUT 2e année</option><option>BUT 3e année</option></select></label>
         <label class="field"><span>Ville d’études</span><select id="f-ville"><option value="">Choisir une ville</option><option>Paris</option><option>Lyon</option><option>Lille</option><option>Bordeaux</option><option>Toulouse</option><option>Grenoble</option></select></label>
+        <label class="field"><span>Établissement / composante</span><select id="f-etablissement"><option value="">Choisir</option></select></label>
+        <label class="field"><span>Formation / cursus précis</span><select id="f-formation"><option value="">Choisir</option></select></label>
+        <label class="field"><span>Année / niveau</span><select id="f-niveau"><option value="">Déduit de la formation</option><option>L1</option><option>L2</option><option>L3</option><option>M1</option><option>M2</option><option>CPGE 1re année</option><option>CPGE 2e année</option><option>BUT 1re année</option><option>BUT 2e année</option><option>BUT 3e année</option></select></label>
         <label class="field"><span>Ville de résidence</span><input id="f-ville-residence" placeholder="Optionnel"></label>
-        <label class="field"><span>Établissement</span><select id="f-etablissement"><option value="">Choisir (optionnel)</option></select></label>
-        <label class="field"><span>Formation</span><select id="f-formation"><option value="">Choisir (optionnel)</option></select></label>
       </div>
 
       <div class="form-section-title"><span class="step-dot">2</span><div><strong>Situation</strong><small>Pour affiner les aides et tarifs spécifiques.</small></div></div>
@@ -118,6 +118,6 @@
 </main>
 
 <div class="sheet-overlay" id="sheet-overlay"><div class="sheet"><button class="sheet-x" id="sheet-x">×</button><div id="sheet-content"></div></div></div>
-<script src="app.js?v=3.7"></script>
+<script src="app.js?v=3.8"></script>
 </body>
 </html>

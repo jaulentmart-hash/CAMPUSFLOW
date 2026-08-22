@@ -3438,6 +3438,120 @@
       "nom": "UFR Pharmacie - UGA",
       "ville": "Grenoble",
       "type": "faculté de santé"
+    },
+    {
+      "id": "EST-GR-DLST",
+      "nom": "DLST — Département Licence Sciences & Technologies, UGA",
+      "ville": "Grenoble",
+      "type": "université"
+    },
+    {
+      "id": "EST-GR-IM2AG",
+      "nom": "UFR IM²AG — Informatique & Mathématiques, UGA",
+      "ville": "Grenoble",
+      "type": "UFR"
+    },
+    {
+      "id": "EST-GR-PHITEM",
+      "nom": "UFR PhITEM — Physique, Ingénierie, Terre, Environnement, Mécanique, UGA",
+      "ville": "Grenoble",
+      "type": "UFR"
+    },
+    {
+      "id": "EST-GR-CBIO",
+      "nom": "UFR Chimie-Biologie, UGA",
+      "ville": "Grenoble",
+      "type": "UFR"
+    },
+    {
+      "id": "EST-GR-ARSH",
+      "nom": "UFR Arts et Sciences Humaines (ARSH), UGA",
+      "ville": "Grenoble",
+      "type": "UFR"
+    },
+    {
+      "id": "EST-GR-LLASIC",
+      "nom": "UFR LLASIC — Lettres, Arts, Information-Communication, UGA",
+      "ville": "Grenoble",
+      "type": "UFR"
+    },
+    {
+      "id": "EST-GR-SHSS",
+      "nom": "UFR Sciences Humaines et Sociales, UGA",
+      "ville": "Grenoble",
+      "type": "UFR"
+    },
+    {
+      "id": "EST-GR-STAPS",
+      "nom": "UFR STAPS, UGA",
+      "ville": "Grenoble",
+      "type": "UFR"
+    },
+    {
+      "id": "EST-GR-DROIT",
+      "nom": "Faculté de Droit, UGA",
+      "ville": "Grenoble",
+      "type": "faculté"
+    },
+    {
+      "id": "EST-GR-ECO",
+      "nom": "Faculté d'Économie de Grenoble, UGA",
+      "ville": "Grenoble",
+      "type": "faculté"
+    },
+    {
+      "id": "EST-GR-IUGA",
+      "nom": "Institut d'Urbanisme et de Géographie Alpine (IUGA), UGA",
+      "ville": "Grenoble",
+      "type": "institut"
+    },
+    {
+      "id": "EST-GR-IAE",
+      "nom": "Grenoble IAE - INP, UGA",
+      "ville": "Grenoble",
+      "type": "école"
+    },
+    {
+      "id": "EST-GR-ENSIMAG",
+      "nom": "Grenoble INP - Ensimag, UGA",
+      "ville": "Grenoble",
+      "type": "école d'ingénieurs"
+    },
+    {
+      "id": "EST-GR-PHELMA",
+      "nom": "Grenoble INP - Phelma, UGA",
+      "ville": "Grenoble",
+      "type": "école d'ingénieurs"
+    },
+    {
+      "id": "EST-GR-ENSE3",
+      "nom": "Grenoble INP - Ense³, UGA",
+      "ville": "Grenoble",
+      "type": "école d'ingénieurs"
+    },
+    {
+      "id": "EST-GR-GI",
+      "nom": "Grenoble INP - Génie industriel, UGA",
+      "ville": "Grenoble",
+      "type": "école d'ingénieurs"
+    },
+    {
+      "id": "EST-GR-PAGORA",
+      "nom": "Grenoble INP - Pagora, UGA",
+      "ville": "Grenoble",
+      "type": "école d'ingénieurs"
+    },
+    {
+      "id": "EST-GR-ESISAR",
+      "nom": "Grenoble INP - Esisar, UGA",
+      "ville": "Grenoble",
+      "type": "école d'ingénieurs"
+    },
+    {
+      "id": "EST-GR-PREPAINP",
+      "nom": "La Prépa des INP — Grenoble",
+      "ville": "Grenoble",
+      "type": "cycle préparatoire"
     }
   ],
   "formations": [
@@ -3772,70 +3886,1435 @@
       "niveau": "L1"
     },
     {
-      "id": "FOR-056",
+      "id": "GR-0001",
+      "etablissement_id": "EST-GR-IM2AG",
+      "nom": "Licence Informatique — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0002",
+      "etablissement_id": "EST-GR-IM2AG",
+      "nom": "Licence Informatique — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0003",
+      "etablissement_id": "EST-GR-IM2AG",
+      "nom": "Licence Informatique — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0004",
+      "etablissement_id": "EST-GR-IM2AG",
+      "nom": "Licence Mathématiques — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0005",
+      "etablissement_id": "EST-GR-IM2AG",
+      "nom": "Licence Mathématiques — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0006",
+      "etablissement_id": "EST-GR-IM2AG",
+      "nom": "Licence Mathématiques — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0007",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Physique — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0008",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Physique — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0009",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Physique — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0010",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Mécanique — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0011",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Mécanique — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0012",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Mécanique — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0013",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Génie civil — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0014",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Génie civil — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0015",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Génie civil — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0016",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Électronique, énergie électrique, automatique — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0017",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Électronique, énergie électrique, automatique — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0018",
+      "etablissement_id": "EST-GR-PHITEM",
+      "nom": "Licence Électronique, énergie électrique, automatique — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0019",
+      "etablissement_id": "EST-GR-CBIO",
+      "nom": "Licence Chimie — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0020",
+      "etablissement_id": "EST-GR-CBIO",
+      "nom": "Licence Chimie — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0021",
+      "etablissement_id": "EST-GR-CBIO",
+      "nom": "Licence Chimie — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0022",
+      "etablissement_id": "EST-GR-CBIO",
+      "nom": "Licence Sciences de la vie — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0023",
+      "etablissement_id": "EST-GR-CBIO",
+      "nom": "Licence Sciences de la vie — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0024",
+      "etablissement_id": "EST-GR-CBIO",
+      "nom": "Licence Sciences de la vie — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0025",
+      "etablissement_id": "EST-GR-IUGA",
+      "nom": "Licence Géographie et aménagement — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0026",
+      "etablissement_id": "EST-GR-IUGA",
+      "nom": "Licence Géographie et aménagement — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0027",
+      "etablissement_id": "EST-GR-IUGA",
+      "nom": "Licence Géographie et aménagement — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0028",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Histoire — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0029",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Histoire — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0030",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Histoire — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0031",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Histoire de l'art et archéologie — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0032",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Histoire de l'art et archéologie — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0033",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Histoire de l'art et archéologie — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0034",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Philosophie — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0035",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Philosophie — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0036",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Philosophie — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0037",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Musicologie — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0038",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Musicologie — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0039",
+      "etablissement_id": "EST-GR-ARSH",
+      "nom": "Licence Musicologie — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0040",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Lettres — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0041",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Lettres — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0042",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Lettres — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0043",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Arts du spectacle — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0044",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Arts du spectacle — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0045",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Arts du spectacle — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0046",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Sciences du langage — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0047",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Sciences du langage — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0048",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Sciences du langage — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0049",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Information-communication — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0050",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Information-communication — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0051",
+      "etablissement_id": "EST-GR-LLASIC",
+      "nom": "Licence Information-communication — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0052",
+      "etablissement_id": "EST-GR-SHSS",
+      "nom": "Licence Psychologie — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0053",
+      "etablissement_id": "EST-GR-SHSS",
+      "nom": "Licence Psychologie — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0054",
+      "etablissement_id": "EST-GR-SHSS",
+      "nom": "Licence Psychologie — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0055",
+      "etablissement_id": "EST-GR-SHSS",
+      "nom": "Licence Sociologie — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0056",
+      "etablissement_id": "EST-GR-SHSS",
+      "nom": "Licence Sociologie — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0057",
+      "etablissement_id": "EST-GR-SHSS",
+      "nom": "Licence Sociologie — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0058",
+      "etablissement_id": "EST-GR-DROIT",
+      "nom": "Licence Droit — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0059",
+      "etablissement_id": "EST-GR-DROIT",
+      "nom": "Licence Droit — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0060",
+      "etablissement_id": "EST-GR-DROIT",
+      "nom": "Licence Droit — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0061",
+      "etablissement_id": "EST-GR-ECO",
+      "nom": "Licence Économie et gestion — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0062",
+      "etablissement_id": "EST-GR-ECO",
+      "nom": "Licence Économie et gestion — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0063",
+      "etablissement_id": "EST-GR-ECO",
+      "nom": "Licence Économie et gestion — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0064",
+      "etablissement_id": "EST-GR-STAPS",
+      "nom": "Licence STAPS — L1",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0065",
+      "etablissement_id": "EST-GR-STAPS",
+      "nom": "Licence STAPS — L2",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0066",
+      "etablissement_id": "EST-GR-STAPS",
+      "nom": "Licence STAPS — L3",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0067",
       "etablissement_id": "EST-123",
-      "nom": "PASS / accès santé — UFR Médecine UGA",
-      "niveau": "L1"
+      "nom": "Médecine — PASS / accès santé",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-057",
+      "id": "GR-0068",
+      "etablissement_id": "EST-123",
+      "nom": "Médecine — DFGSM2 — 2e année",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0069",
+      "etablissement_id": "EST-123",
+      "nom": "Médecine — DFGSM3 — 3e année",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0070",
+      "etablissement_id": "EST-123",
+      "nom": "Médecine — DFASM1 — 4e année",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0071",
+      "etablissement_id": "EST-123",
+      "nom": "Médecine — DFASM2 — 5e année",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0072",
+      "etablissement_id": "EST-123",
+      "nom": "Médecine — DFASM3 — 6e année",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0073",
+      "etablissement_id": "EST-124",
+      "nom": "Pharmacie — PASS / accès santé",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0074",
+      "etablissement_id": "EST-124",
+      "nom": "Pharmacie — DFGSP2 — 2e année",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0075",
+      "etablissement_id": "EST-124",
+      "nom": "Pharmacie — DFGSP3 — 3e année",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0076",
+      "etablissement_id": "EST-124",
+      "nom": "Pharmacie — DFASP1 — 4e année",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0077",
+      "etablissement_id": "EST-124",
+      "nom": "Pharmacie — DFASP2 — 5e année",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0078",
+      "etablissement_id": "EST-124",
+      "nom": "Pharmacie — 6e année",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://formations.univ-grenoble-alpes.fr/fr/recherche/ville-grenoble.html",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0079",
       "etablissement_id": "EST-120",
-      "nom": "BUT Informatique",
-      "niveau": "BUT 1re année"
+      "nom": "BUT Chimie — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-058",
+      "id": "GR-0080",
       "etablissement_id": "EST-120",
-      "nom": "BUT Génie Électrique et Informatique Industrielle (GEII)",
-      "niveau": "BUT 1re année"
+      "nom": "BUT Chimie — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-059",
+      "id": "GR-0081",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Chimie — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0082",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie civil - Construction durable (GCCD) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0083",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie civil - Construction durable (GCCD) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0084",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie civil - Construction durable (GCCD) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0085",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie électrique et informatique industrielle (GEII) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0086",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie électrique et informatique industrielle (GEII) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0087",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie électrique et informatique industrielle (GEII) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0088",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie mécanique et productique (GMP) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0089",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie mécanique et productique (GMP) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0090",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie mécanique et productique (GMP) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0091",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Mesures physiques (MP) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0092",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Mesures physiques (MP) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0093",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Mesures physiques (MP) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0094",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Métiers de la transition et de l'efficacité énergétiques (MT2E) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0095",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Métiers de la transition et de l'efficacité énergétiques (MT2E) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0096",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Métiers de la transition et de l'efficacité énergétiques (MT2E) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0097",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Métiers du multimédia et de l'internet (MMI) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0098",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Métiers du multimédia et de l'internet (MMI) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0099",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Métiers du multimédia et de l'internet (MMI) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0100",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Réseaux et télécommunications (RT) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0101",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Réseaux et télécommunications (RT) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0102",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Réseaux et télécommunications (RT) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut1.univ-grenoble-alpes.fr/formations/but/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0103",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Carrières sociales — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0104",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Carrières sociales — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0105",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Carrières sociales — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0106",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Gestion des entreprises et des administrations (GEA) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0107",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Gestion des entreprises et des administrations (GEA) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0108",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Gestion des entreprises et des administrations (GEA) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0109",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Informatique — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0110",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Informatique — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0111",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Informatique — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0112",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Information-communication — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0113",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Information-communication — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0114",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Information-communication — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0115",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Science des données — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0116",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Science des données — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0117",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Science des données — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0118",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Techniques de commercialisation (TC) — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0119",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Techniques de commercialisation (TC) — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0120",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Techniques de commercialisation (TC) — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0121",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Carrières juridiques — BUT1",
+      "niveau": "BUT 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0122",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Carrières juridiques — BUT2",
+      "niveau": "BUT 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0123",
+      "etablissement_id": "EST-122",
+      "nom": "BUT Carrières juridiques — BUT3",
+      "niveau": "BUT 3e année",
+      "ville": "Grenoble",
+      "source_url": "https://iut2.univ-grenoble-alpes.fr/formations/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0124",
+      "etablissement_id": "EST-119",
+      "nom": "Diplôme de Sciences Po Grenoble — 1re année",
+      "niveau": "L1",
+      "ville": "Grenoble",
+      "source_url": "https://www.sciencespo-grenoble.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0125",
+      "etablissement_id": "EST-119",
+      "nom": "Diplôme de Sciences Po Grenoble — 2e année",
+      "niveau": "L2",
+      "ville": "Grenoble",
+      "source_url": "https://www.sciencespo-grenoble.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0126",
+      "etablissement_id": "EST-119",
+      "nom": "Diplôme de Sciences Po Grenoble — 3e année",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://www.sciencespo-grenoble.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0127",
+      "etablissement_id": "EST-119",
+      "nom": "Diplôme de Sciences Po Grenoble — 4e année",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://www.sciencespo-grenoble.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0128",
+      "etablissement_id": "EST-119",
+      "nom": "Diplôme de Sciences Po Grenoble — 5e année",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://www.sciencespo-grenoble.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0129",
+      "etablissement_id": "EST-GR-ENSIMAG",
+      "nom": "Diplôme d'ingénieur Ensimag — 1A cycle ingénieur",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0130",
+      "etablissement_id": "EST-GR-ENSIMAG",
+      "nom": "Diplôme d'ingénieur Ensimag — 2A cycle ingénieur",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0131",
+      "etablissement_id": "EST-GR-ENSIMAG",
+      "nom": "Diplôme d'ingénieur Ensimag — 3A cycle ingénieur",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0132",
+      "etablissement_id": "EST-GR-PHELMA",
+      "nom": "Diplôme d'ingénieur Phelma — 1A cycle ingénieur",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0133",
+      "etablissement_id": "EST-GR-PHELMA",
+      "nom": "Diplôme d'ingénieur Phelma — 2A cycle ingénieur",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0134",
+      "etablissement_id": "EST-GR-PHELMA",
+      "nom": "Diplôme d'ingénieur Phelma — 3A cycle ingénieur",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0135",
+      "etablissement_id": "EST-GR-ENSE3",
+      "nom": "Diplôme d'ingénieur Ense³ — 1A cycle ingénieur",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0136",
+      "etablissement_id": "EST-GR-ENSE3",
+      "nom": "Diplôme d'ingénieur Ense³ — 2A cycle ingénieur",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0137",
+      "etablissement_id": "EST-GR-ENSE3",
+      "nom": "Diplôme d'ingénieur Ense³ — 3A cycle ingénieur",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0138",
+      "etablissement_id": "EST-GR-GI",
+      "nom": "Diplôme d'ingénieur Génie industriel — 1A cycle ingénieur",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0139",
+      "etablissement_id": "EST-GR-GI",
+      "nom": "Diplôme d'ingénieur Génie industriel — 2A cycle ingénieur",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0140",
+      "etablissement_id": "EST-GR-GI",
+      "nom": "Diplôme d'ingénieur Génie industriel — 3A cycle ingénieur",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0141",
+      "etablissement_id": "EST-GR-PAGORA",
+      "nom": "Diplôme d'ingénieur Pagora — 1A cycle ingénieur",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0142",
+      "etablissement_id": "EST-GR-PAGORA",
+      "nom": "Diplôme d'ingénieur Pagora — 2A cycle ingénieur",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0143",
+      "etablissement_id": "EST-GR-PAGORA",
+      "nom": "Diplôme d'ingénieur Pagora — 3A cycle ingénieur",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0144",
+      "etablissement_id": "EST-GR-ESISAR",
+      "nom": "Diplôme d'ingénieur Esisar — 1A cycle ingénieur",
+      "niveau": "L3",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0145",
+      "etablissement_id": "EST-GR-ESISAR",
+      "nom": "Diplôme d'ingénieur Esisar — 2A cycle ingénieur",
+      "niveau": "M1",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0146",
+      "etablissement_id": "EST-GR-ESISAR",
+      "nom": "Diplôme d'ingénieur Esisar — 3A cycle ingénieur",
+      "niveau": "M2",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation/ingenieurs",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0147",
+      "etablissement_id": "EST-GR-PREPAINP",
+      "nom": "La Prépa des INP — 1re année",
+      "niveau": "CPGE 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0148",
+      "etablissement_id": "EST-GR-PREPAINP",
+      "nom": "La Prépa des INP — 2e année",
+      "niveau": "CPGE 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://www.grenoble-inp.fr/fr/formation",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0149",
       "etablissement_id": "EST-121",
-      "nom": "CPGE MPSI",
-      "niveau": "1re année"
+      "nom": "CPGE MPSI — 1re année",
+      "niveau": "CPGE 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-060",
-      "etablissement_id": "EST-117",
-      "nom": "Licence 1 — UGA",
-      "niveau": "L1"
+      "id": "GR-0150",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE PCSI — 1re année",
+      "niveau": "CPGE 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-061",
-      "etablissement_id": "EST-117",
-      "nom": "Licence 2 — UGA",
-      "niveau": "L2"
+      "id": "GR-0151",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE MP2I — 1re année",
+      "niveau": "CPGE 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-062",
-      "etablissement_id": "EST-117",
-      "nom": "Licence 3 — UGA",
-      "niveau": "L3"
+      "id": "GR-0152",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE ECG — 1re année",
+      "niveau": "CPGE 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-063",
-      "etablissement_id": "EST-117",
-      "nom": "Master 1 — UGA",
-      "niveau": "M1"
+      "id": "GR-0153",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE BCPST — 1re année",
+      "niveau": "CPGE 1re année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-064",
-      "etablissement_id": "EST-117",
-      "nom": "Master 2 — UGA",
-      "niveau": "M2"
+      "id": "GR-0154",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE MP — 2e année",
+      "niveau": "CPGE 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-065",
-      "etablissement_id": "EST-123",
-      "nom": "DFGSM2 — 2e année de médecine",
-      "niveau": "L2"
+      "id": "GR-0155",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE PC — 2e année",
+      "niveau": "CPGE 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     },
     {
-      "id": "FOR-066",
-      "etablissement_id": "EST-123",
-      "nom": "DFGSM3 — 3e année de médecine",
-      "niveau": "L3"
+      "id": "GR-0156",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE PSI — 2e année",
+      "niveau": "CPGE 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0157",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE MPI — 2e année",
+      "niveau": "CPGE 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0158",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE ECG — 2e année",
+      "niveau": "CPGE 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
+    },
+    {
+      "id": "GR-0159",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE BCPST — 2e année",
+      "niveau": "CPGE 2e année",
+      "ville": "Grenoble",
+      "source_url": "https://lycee-champollion.fr/",
+      "annee_universitaire": "2026-2027"
     }
   ],
   "sources": [
@@ -3983,7 +5462,7 @@
     }
   ],
   "audit": {
-    "version": "3.7",
+    "version": "3.8",
     "ville_pilote": "Grenoble",
     "date": "2026-08-22",
     "status": "profils_reels_corriges",
@@ -3992,6 +5471,7 @@
       "DFGSM2 et DFGSM3 créés comme formations distinctes",
       "Deadlines médecine reliées aux bons cursus",
       "Planning établissement/formation rendu plus strict"
-    ]
+    ],
+    "formation_model": "Ville → établissement/composante → cursus précis → niveau synchronisé"
   }
 }
