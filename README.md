@@ -40,3 +40,12 @@ Tester le MVP avec de vrais étudiants avant de brancher un backend. Si l'usage 
 - Correctif du sélecteur de ville d’étude sur GitHub Pages.
 - Paris, Lyon, Lille, Bordeaux, Toulouse et Grenoble sont disponibles même en cas de problème de chargement de data.json.
 - Cache-busting sur app.js, style.css et data.json pour éviter que Safari conserve une ancienne version.
+
+## V3.4 — Grenoble pilote
+- Couverture Grenoble enrichie : campus, santé, alimentation solidaire, logement, culture, sport.
+- Matching par établissement, formation, niveau et logement en plus des critères existants.
+- Planning contextualisé par formation (ex. PASS / DFGSM2 / DFGSM3) et niveau UGA.
+- Fiches détaillées avec raisons de recommandation.
+
+## V3.4 — Grenoble renforcé
+Ajouts vérifiés le 22/08/2026 : Carte Emblem 2026/2027 et offre ski Les 2 Alpes, mutuelle communale -30% étudiants, aide mobilité CCAS QF ≤ 715 €, Théâtre municipal tarifs étudiant/boursier, Au Local -15% étudiants, La Chaufferie 15-25 ans. Les offres commerciales sont explicitement distinguées des dispositifs publics.

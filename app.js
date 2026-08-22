@@ -13,7 +13,7 @@ function saveCompleted(){ localStorage.setItem('campusflow_completed', JSON.stri
 
 const FALLBACK_CITIES = ['Paris','Lyon','Lille','Bordeaux','Toulouse','Grenoble'];
 
-fetch('data.json?v=3.1')
+fetch('data.json?v=3.3')
   .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then(json=>{ DATA={...DATA,...json}; init(); })
   .catch(err=>{
@@ -35,17 +35,44 @@ function opportunityIsCompatible(o){
   if (!opportunityMatchesProfile(o)) return false;
   if ((o.boursier_requis||'').toLowerCase()==='oui' && PROFILE.boursier!=='oui') return false;
   if ((o.alternant_requis||'').toLowerCase()==='oui' && PROFILE.alternant!=='oui') return false;
+  if (o.age_min && PROFILE.age && Number(PROFILE.age)<Number(o.age_min)) return false;
   if (o.age_max && PROFILE.age && Number(PROFILE.age)>Number(o.age_max)) return false;
+  if (o.qf_max && PROFILE.qf && Number(PROFILE.qf)>Number(o.qf_max)) return false;
+  if (o.residence_requise && PROFILE.villeResidence && PROFILE.villeResidence!==o.residence_requise) return false;
+  if (o.etablissements_requis?.length && PROFILE.etablissement && !o.etablissements_requis.includes(PROFILE.etablissement)) return false;
+  if (o.formations_requises?.length && PROFILE.formation && !o.formations_requises.includes(PROFILE.formation)) return false;
+  if (o.niveaux_requis?.length && PROFILE.niveau && !o.niveaux_requis.includes(PROFILE.niveau)) return false;
+  if (o.logements_compatibles?.length && PROFILE.logement && !o.logements_compatibles.includes(PROFILE.logement)) return false;
   return true;
 }
 function confidence(o){
   let known=0, checks=0;
-  if (o.age_max){ checks++; if(PROFILE.age) known++; }
+  if (o.age_min || o.age_max){ checks++; if(PROFILE.age) known++; }
+  if (o.qf_max){ checks++; if(PROFILE.qf) known++; }
+  if (o.residence_requise){ checks++; if(PROFILE.villeResidence) known++; }
+  if (o.etablissements_requis?.length){ checks++; if(PROFILE.etablissement) known++; }
+  if (o.formations_requises?.length){ checks++; if(PROFILE.formation) known++; }
+  if (o.niveaux_requis?.length){ checks++; if(PROFILE.niveau) known++; }
+  if (o.logements_compatibles?.length){ checks++; if(PROFILE.logement) known++; }
   if ((o.boursier_requis||'').toLowerCase()==='oui'){ checks++; known++; }
   if ((o.alternant_requis||'').toLowerCase()==='oui'){ checks++; known++; }
   if (!isNational(o)){ checks++; if(PROFILE.ville) known++; }
   if (!checks) return 'À vérifier';
   return known===checks ? 'Profil compatible' : 'À vérifier';
+}
+function matchingReasons(o){
+  const r=[];
+  if(!isNational(o) && PROFILE.ville===o.ville) r.push(`Études à ${PROFILE.ville}`);
+  if(o.etablissements_requis?.includes(PROFILE.etablissement)) r.push('Ton établissement');
+  if(o.formations_requises?.includes(PROFILE.formation)) r.push('Ta formation');
+  if(o.niveaux_requis?.includes(PROFILE.niveau)) r.push(`Niveau ${PROFILE.niveau}`);
+  if((o.boursier_requis||'').toLowerCase()==='oui' && PROFILE.boursier==='oui') r.push('Statut boursier');
+  if((o.alternant_requis||'').toLowerCase()==='oui' && PROFILE.alternant==='oui') r.push('Statut alternant');
+  if((o.age_min||o.age_max) && PROFILE.age) r.push(`${PROFILE.age} ans`);
+  if(o.qf_max && PROFILE.qf) r.push(`QF ${PROFILE.qf} €`);
+  if(o.logements_compatibles?.includes(PROFILE.logement) && PROFILE.logement) r.push('Situation logement');
+  if(isNational(o)) r.push('Dispositif national');
+  return r.slice(0,4);
 }
 
 function financialClass(o){
@@ -124,6 +151,12 @@ function renderHome(){
   const sub=$('#welcome-subtitle');
   if(title) title.textContent=PROFILE.ville?`Bonjour 👋`:'Bienvenue sur CampusFlow 👋';
   if(sub) sub.textContent=PROFILE.ville?`Ton tableau de bord étudiant pour ${PROFILE.ville}.`:'Complète ton profil pour personnaliser les aides et les échéances.';
+  const coverage=$('#coverage-note');
+  if(coverage){
+    const localCount=DATA.opportunities.filter(o=>o.ville===PROFILE.ville).length;
+    coverage.hidden=!PROFILE.ville;
+    if(PROFILE.ville) coverage.innerHTML=`<strong>${localCount} dispositifs locaux</strong> référencés à ${escapeHtml(PROFILE.ville)} · matching national + local + établissement${PROFILE.formation?' + formation':''}`;
+  }
   const dls=relevantDeadlines();
   const homeDl=$('#home-deadlines'); homeDl.innerHTML='';
   if(!dls.length) homeDl.innerHTML='<div class="empty-state compact">Aucune échéance pertinente à venir.</div>';
@@ -132,7 +165,7 @@ function renderHome(){
   if(!compatible.length) homeOpp.innerHTML='<div class="empty-state compact">Complète ton profil pour obtenir des recommandations.</div>';
   compatible.sort((a,b)=>scoreOpportunity(b)-scoreOpportunity(a)).slice(0,4).forEach(o=>homeOpp.appendChild(opportunityCard(o)));
 }
-function scoreOpportunity(o){ return (financialClass(o)==='aid'?30:0) + (confidence(o)==='Profil compatible'?20:0) + (isNational(o)?0:10) + ((o.statut_verification||'').includes('🟢')?5:0); }
+function scoreOpportunity(o){ return (financialClass(o)==='aid'?30:0) + (confidence(o)==='Profil compatible'?20:0) + (isNational(o)?0:15) + (o.formations_requises?.includes(PROFILE.formation)?30:0) + (o.etablissements_requis?.includes(PROFILE.etablissement)?20:0) + ((o.statut_verification||'').includes('🟢')?5:0); }
 
 let activeVille='Toutes', activeCategorie='Toutes', activeType='Toutes', activeProfile='Mon profil';
 function renderFilters(){
@@ -170,9 +203,10 @@ function opportunityCard(o){
 }
 function openOpportunitySheet(o){
   const official=(o.statut_verification||'').includes('🟢')?'Source vérifiée':'À revérifier';
+  const reasons=matchingReasons(o);
   $('#sheet-content').innerHTML=`<h2>${escapeHtml(o.nom||'')}</h2><div class="card-amount">${escapeHtml(displayAmount(o))}</div>
   <p class="sheet-copy">${escapeHtml(o.description_courte||'')}</p>
-  <div class="eligibility-note">${opportunityIsCompatible(o)?'Ton profil semble compatible — vérifie les conditions officielles.':'Cette opportunité ne correspond pas complètement aux informations de ton profil.'}</div>
+  <div class="eligibility-note">${opportunityIsCompatible(o)?'Ton profil semble compatible — vérifie les conditions officielles.':'Cette opportunité ne correspond pas complètement aux informations de ton profil.'}${reasons.length?`<div class="reason-list">${reasons.map(r=>`<span>${escapeHtml(r)}</span>`).join('')}</div>`:''}</div>
   <div class="sheet-row"><span class="k">Type</span><span class="v">${labelFinancialClass(o)}</span></div>
   <div class="sheet-row"><span class="k">Critères</span><span class="v">${escapeHtml(o.autres_criteres||'À vérifier')}</span></div>
   <div class="sheet-row"><span class="k">Fréquence</span><span class="v">${escapeHtml(o.frequence||'—')}</span></div>
@@ -184,8 +218,17 @@ function openOpportunitySheet(o){
 function labelFinancialClass(o){ return ({aid:'Aide / exonération',benefit:'Avantage tarifaire',cost:'Tarif préférentiel',saving:'Économie variable',financing:'Financement',service:'Service'})[financialClass(o)]||'Service'; }
 
 function parseDeadlineDate(d){ const raw=d.date_fin||d.date_debut; if(!raw)return null; const x=new Date(raw+'T12:00:00'); return isNaN(x)?null:x; }
+function deadlineMatchesProfile(d){
+  const loc=(d.ville_ou_perimetre||'');
+  if(!(loc==='France entière'||!PROFILE.ville||loc===PROFILE.ville)) return false;
+  if(d.etablissements_requis?.length && PROFILE.etablissement && !d.etablissements_requis.includes(PROFILE.etablissement)) return false;
+  if(d.formations_requises?.length){ if(!PROFILE.formation || !d.formations_requises.includes(PROFILE.formation)) return false; }
+  if(d.niveaux_requis?.length && PROFILE.niveau && !d.niveaux_requis.includes(PROFILE.niveau)) return false;
+  if(d.logements_requis?.length && PROFILE.logement && !d.logements_requis.includes(PROFILE.logement)) return false;
+  return true;
+}
 function relevantDeadlines(){ const now=new Date(); return DATA.deadlines.filter(d=>{
-  const loc=(d.ville_ou_perimetre||''); const relevant=loc==='France entière'||!PROFILE.ville||loc===PROFILE.ville; const dt=parseDeadlineDate(d); return relevant && (!dt || dt >= new Date(now.getTime()-86400000));
+  const dt=parseDeadlineDate(d); return deadlineMatchesProfile(d) && (!dt || dt >= new Date(now.getTime()-86400000));
  }).sort((a,b)=>(parseDeadlineDate(a)||new Date('2999-01-01'))-(parseDeadlineDate(b)||new Date('2999-01-01'))); }
 function urgencyBucket(d){ const dt=parseDeadlineDate(d); if(!dt)return'green'; const days=(dt-new Date())/86400000; if(days<=14)return'red'; if(days<=60)return'orange'; return'green'; }
 function deadlineRow(d){
