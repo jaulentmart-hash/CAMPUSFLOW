@@ -3,89 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0F1224">
+<meta name="theme-color" content="#f5f7fb">
 <title>CampusFlow — ton copilote étudiant</title>
-<link rel="stylesheet" href="style.css?v=2.1">
+<link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body>
-<div class="topbar"><div class="brand"><span class="dot"></span> CampusFlow <span class="v2-badge">V2.1</span></div></div>
+<header class="app-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#" data-nav="accueil"><span class="brand-mark">C</span><span>CampusFlow</span></a>
+    <nav class="top-nav">
+      <button class="nav-item active" data-nav="accueil">Accueil</button>
+      <button class="nav-item" data-nav="opportunites">Aides</button>
+      <button class="nav-item" data-nav="planning">Planning</button>
+      <button class="nav-item" data-nav="profil">Mon profil</button>
+    </nav>
+    <button class="profile-shortcut" data-nav="profil" aria-label="Mon profil">👤</button>
+  </div>
+</header>
 
-<div class="page active" id="page-accueil">
-  <div class="id-card">
-    <div class="id-label">Profil étudiant</div>
-    <div class="id-name" id="id-name">Configure ton profil</div>
-    <div class="id-pills" id="id-pills"></div>
+<main class="shell app-main">
+<section class="page active" id="page-accueil">
+  <div class="welcome-row">
+    <div><div class="eyebrow">TABLEAU DE BORD</div><h1 id="welcome-title">Bonjour 👋</h1><p id="welcome-subtitle">Voici ce qui pourrait te concerner en ce moment.</p></div>
+    <button class="secondary-btn" data-nav="profil">Modifier mon profil</button>
   </div>
 
-  <div class="savings-hero">
-    <div class="label">Aides financières potentielles identifiées</div>
-    <div class="amount" id="savings-amount">0 €</div>
-    <div class="label" id="savings-count">0 aide compatible</div>
-    <div class="finance-grid">
-      <div class="finance-chip" id="benefit-count">0 avantage tarifaire</div>
-      <div class="finance-chip" id="financing-amount">Aucun financement spécifique détecté</div>
+  <section class="hero-card">
+    <div class="hero-copy">
+      <span class="hero-kicker">Aides financières potentielles</span>
+      <div class="hero-amount" id="savings-amount">0 €</div>
+      <div class="hero-detail" id="savings-count">Complète ton profil pour affiner l’estimation.</div>
+      <button class="primary-btn" data-nav="opportunites">Voir le détail →</button>
     </div>
-    <div class="disclaimer">Estimation indicative : les montants ne sont jamais garantis. CampusFlow distingue désormais aides, avantages tarifaires et financements.</div>
-  </div>
-
-  <div class="section">
-    <div class="section-title"><span>À faire bientôt</span><a href="#" class="see-all" data-nav="planning">voir tout →</a></div>
-    <div id="home-deadlines"></div>
-  </div>
-  <div class="section">
-    <div class="section-title"><span>Prioritaire pour toi</span><a href="#" class="see-all" data-nav="opportunites">voir tout →</a></div>
-    <div id="home-opportunities"></div>
-  </div>
-  <div class="upgrade-banner"><b>CampusFlow Premium</b> — à valider après les premiers tests utilisateurs. La V2 reste entièrement exploitable sans paiement.</div>
-</div>
-
-<div class="page" id="page-opportunites">
-  <div class="section page-head"><h2>Opportunités</h2><p>Les dispositifs sont classés par nature pour éviter les faux totaux.</p></div>
-  <div class="filter-row" id="filter-type"></div>
-  <div class="filter-row" id="filter-ville"></div>
-  <div class="filter-row" id="filter-categorie"></div>
-  <div class="section" id="opp-list"></div>
-</div>
-
-<div class="page" id="page-planning">
-  <div class="section page-head"><h2>Planning personnalisé</h2><p>Seulement les échéances nationales et celles de ta ville. Coche une démarche quand elle est faite.</p></div>
-  <div class="section">
-    <div class="section-title"><span>🔴 Dans les 14 jours</span></div><div id="deadlines-red"></div>
-    <div class="section-title spaced"><span>🟠 Dans les 60 jours</span></div><div id="deadlines-orange"></div>
-    <div class="section-title spaced"><span>🟢 Plus tard / informatif</span></div><div id="deadlines-green"></div>
-  </div>
-</div>
-
-<div class="page" id="page-profil">
-  <div class="section page-head"><h2>Ton profil</h2><p>Les champs détaillés sont optionnels : ils servent à préparer un matching établissement/formation plus précis.</p></div>
-  <div class="section">
-    <div class="profile-group"><h3>Essentiel</h3>
-      <div class="field"><label>Ville d'études</label><select id="f-ville"></select></div>
-      <div class="field"><label>Ville de résidence</label><input id="f-ville-residence" placeholder="Ex. Grenoble"></div>
-      <div class="field two-col"><div><label>Âge</label><input type="number" id="f-age" placeholder="20"></div><div><label>Niveau</label><select id="f-niveau"><option value="">Choisir</option><option>L1</option><option>L2</option><option>L3</option><option>M1</option><option>M2</option><option>BTS 1re année</option><option>BTS 2e année</option><option>CPGE 1re année</option><option>CPGE 2e année</option><option>BUT 1re année</option><option>BUT 2e année</option><option>BUT 3e année</option></select></div></div>
-      <div class="field"><label>Boursier</label><div class="toggle-row"><button class="toggle-btn" data-field="boursier" data-value="oui">Oui</button><button class="toggle-btn" data-field="boursier" data-value="non">Non</button></div></div>
-      <div class="field"><label>Alternant</label><div class="toggle-row"><button class="toggle-btn" data-field="alternant" data-value="oui">Oui</button><button class="toggle-btn" data-field="alternant" data-value="non">Non</button></div></div>
+    <div class="hero-stats">
+      <div class="stat-card"><span>Économies estimées</span><strong id="benefit-amount">0 €</strong><small>réductions quantifiables</small></div>
+      <div class="stat-card"><span>Financements</span><strong id="financing-amount">0 €</strong><small>prêts / avances, non comptés comme économies</small></div>
+      <div class="stat-card"><span>Opportunités</span><strong id="opportunity-count">0</strong><small>compatibles avec ton profil</small></div>
     </div>
+  </section>
 
-    <div class="profile-group"><h3>Pour affiner</h3>
-      <div class="field"><label>Établissement</label><select id="f-etablissement"></select></div>
-      <div class="field"><label>Formation</label><select id="f-formation"></select></div>
-      <div class="field"><label>Logement</label><select id="f-logement"><option value="">Non renseigné</option><option>chez les parents</option><option>résidence CROUS</option><option>location seul</option><option>colocation</option><option>résidence privée</option></select></div>
-      <div class="field"><label>Transport principal</label><select id="f-transport"><option value="">Non renseigné</option><option>transports en commun</option><option>vélo</option><option>voiture</option><option>train</option><option>marche</option></select></div>
-      <div class="field"><label>Quotient familial CAF (optionnel)</label><input type="number" id="f-qf" placeholder="Uniquement pour les tarifs solidaires"></div>
-    </div>
-    <button class="btn-primary" id="save-profile">Mettre à jour mon CampusFlow</button>
-    <div class="privacy-note">Dans cette version, ton profil reste uniquement dans le stockage local de ton navigateur.</div>
+  <div class="dashboard-grid">
+    <section class="panel">
+      <div class="panel-head"><div><h2>Mes prochaines échéances</h2><p>Les démarches les plus proches.</p></div><button class="text-link" data-nav="planning">Tout voir →</button></div>
+      <div id="home-deadlines" class="stack-list"></div>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><div><h2>Recommandé pour toi</h2><p>Les opportunités les plus pertinentes.</p></div><button class="text-link" data-nav="opportunites">Tout voir →</button></div>
+      <div id="home-opportunities" class="stack-list"></div>
+    </section>
   </div>
-</div>
 
-<div class="sheet-overlay" id="sheet-overlay"><div class="sheet"><div class="sheet-close"></div><div id="sheet-content"></div></div></div>
-<div class="bottom-nav">
-  <button class="nav-item active" data-nav="accueil"><span class="nav-icon">⌂</span>Accueil</button>
-  <button class="nav-item" data-nav="opportunites"><span class="nav-icon">⌕</span>Opportunités</button>
-  <button class="nav-item" data-nav="planning"><span class="nav-icon">✓</span>Planning</button>
-  <button class="nav-item" data-nav="profil"><span class="nav-icon">◎</span>Profil</button>
-</div>
-<script src="app.js?v=2.1"></script>
+  <section class="panel full-panel">
+    <div class="panel-head"><div><h2>Ce que CampusFlow a identifié</h2><p>Les montants sont séparés pour éviter les faux totaux.</p></div></div>
+    <div class="summary-strip">
+      <div><span>Aides / exonérations</span><strong id="summary-aids">0</strong></div>
+      <div><span>Avantages tarifaires</span><strong id="summary-benefits">0</strong></div>
+      <div><span>Services utiles</span><strong id="summary-services">0</strong></div>
+      <div><span>À vérifier</span><strong id="summary-check">0</strong></div>
+    </div>
+  </section>
+</section>
+
+<section class="page" id="page-opportunites">
+  <div class="page-title-row"><div><div class="eyebrow">OPPORTUNITÉS</div><h1>Les aides qui peuvent te concerner</h1><p>Filtrées selon ton profil, ta ville et ta situation.</p></div></div>
+  <div class="toolbar-card">
+    <input id="opp-search" class="search-input" placeholder="Rechercher une aide, un transport, une réduction…">
+    <div class="filter-wrap"><div class="filter-row" id="filter-type"></div><div class="filter-row" id="filter-categorie"></div><div class="filter-row" id="filter-ville"></div></div>
+  </div>
+  <div id="opp-list" class="opportunity-grid"></div>
+</section>
+
+<section class="page" id="page-planning">
+  <div class="page-title-row"><div><div class="eyebrow">PLANNING</div><h1>Mes démarches</h1><p>Classe tes échéances, avance et coche ce qui est terminé.</p></div></div>
+  <div class="planning-grid">
+    <section class="panel"><div class="urgency-title"><span class="urgency-badge urgent">Urgent</span><span>≤ 14 jours</span></div><div id="deadlines-red" class="stack-list"></div></section>
+    <section class="panel"><div class="urgency-title"><span class="urgency-badge soon">Cette période</span><span>≤ 60 jours</span></div><div id="deadlines-orange" class="stack-list"></div></section>
+    <section class="panel"><div class="urgency-title"><span class="urgency-badge later">Plus tard</span><span>à anticiper</span></div><div id="deadlines-green" class="stack-list"></div></section>
+  </div>
+</section>
+
+<section class="page" id="page-profil">
+  <div class="page-title-row"><div><div class="eyebrow">MON PROFIL</div><h1>Personnalise CampusFlow</h1><p>Plus ton profil est précis, plus les recommandations le sont.</p></div></div>
+  <div class="profile-layout">
+    <form class="panel profile-form" onsubmit="return false;">
+      <div class="form-section-title"><span class="step-dot">1</span><div><strong>Informations principales</strong><small>Pour déterminer les dispositifs nationaux et locaux.</small></div></div>
+      <div class="form-grid">
+        <label class="field"><span>Âge</span><input type="number" id="f-age" min="15" max="99" placeholder="18"></label>
+        <label class="field"><span>Niveau d’étude</span><select id="f-niveau"><option value="">Choisir</option><option>L1</option><option>L2</option><option>L3</option><option>M1</option><option>M2</option><option>BTS 1re année</option><option>BTS 2e année</option><option>CPGE 1re année</option><option>CPGE 2e année</option><option>BUT 1re année</option><option>BUT 2e année</option><option>BUT 3e année</option></select></label>
+        <label class="field"><span>Ville d’études</span><select id="f-ville"><option value="">Choisir une ville</option><option>Paris</option><option>Lyon</option><option>Lille</option><option>Bordeaux</option><option>Toulouse</option><option>Grenoble</option></select></label>
+        <label class="field"><span>Ville de résidence</span><input id="f-ville-residence" placeholder="Optionnel"></label>
+        <label class="field"><span>Établissement</span><select id="f-etablissement"><option value="">Choisir (optionnel)</option></select></label>
+        <label class="field"><span>Formation</span><select id="f-formation"><option value="">Choisir (optionnel)</option></select></label>
+      </div>
+
+      <div class="form-section-title"><span class="step-dot">2</span><div><strong>Situation</strong><small>Pour affiner les aides et tarifs spécifiques.</small></div></div>
+      <div class="form-grid">
+        <div class="field"><span>Boursier</span><div class="segmented"><button type="button" class="toggle-btn" data-field="boursier" data-value="oui">Oui</button><button type="button" class="toggle-btn" data-field="boursier" data-value="non">Non</button></div></div>
+        <div class="field"><span>Alternant</span><div class="segmented"><button type="button" class="toggle-btn" data-field="alternant" data-value="oui">Oui</button><button type="button" class="toggle-btn" data-field="alternant" data-value="non">Non</button></div></div>
+        <label class="field"><span>Logement</span><select id="f-logement"><option value="">Non renseigné</option><option value="parents">Chez mes parents</option><option value="location">Location</option><option value="colocation">Colocation</option><option value="crous">Résidence CROUS</option></select></label>
+        <label class="field"><span>Transport principal</span><select id="f-transport"><option value="">Non renseigné</option><option>Transports en commun</option><option>Train</option><option>Vélo</option><option>Voiture</option><option>À pied</option></select></label>
+        <label class="field"><span>Quotient familial (€)</span><input type="number" id="f-qf" placeholder="Optionnel"></label>
+      </div>
+      <button id="save-profile" class="primary-btn save-btn">Enregistrer mon profil</button>
+    </form>
+
+    <aside class="panel profile-preview">
+      <div class="preview-avatar">🎓</div><h3 id="id-name">Ton profil étudiant</h3><p>Résumé utilisé pour le matching.</p><div id="id-pills" class="profile-tags"></div>
+      <div class="trust-box"><strong>Confidentialité</strong><p>Cette version stocke ton profil uniquement dans ton navigateur. Aucun compte ni serveur n’est nécessaire.</p></div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<div class="sheet-overlay" id="sheet-overlay"><div class="sheet"><button class="sheet-x" id="sheet-x">×</button><div id="sheet-content"></div></div></div>
+<script src="app.js?v=3.0"></script>
 </body>
 </html>
