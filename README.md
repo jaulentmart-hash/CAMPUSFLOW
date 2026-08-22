@@ -49,3 +49,19 @@ Tester le MVP avec de vrais étudiants avant de brancher un backend. Si l'usage 
 
 ## V3.4 — Grenoble renforcé
 Ajouts vérifiés le 22/08/2026 : Carte Emblem 2026/2027 et offre ski Les 2 Alpes, mutuelle communale -30% étudiants, aide mobilité CCAS QF ≤ 715 €, Théâtre municipal tarifs étudiant/boursier, Au Local -15% étudiants, La Chaufferie 15-25 ans. Les offres commerciales sont explicitement distinguées des dispositifs publics.
+
+
+## V3.5 — audit Grenoble
+- correction M réso : âge 18–24 ans ;
+- tarification solidaire M réso : QF ≤ 900 pris en compte par le matching ;
+- Carte Emblem : moins de 30 ans ;
+- conservation du statut « À vérifier » lorsqu'une condition nécessaire manque au profil ;
+- contrôle de profils types Grenoble avant extension nationale.
+
+
+## V3.6
+Audit matching Grenoble renforcé : critères requis explicites, aucune addition naïve des aides, prêts séparés, statut À vérifier pour les profils incomplets.
+
+
+## V3.7 — audit profils réels
+Correction structurelle des cursus médecine Grenoble (PASS, DFGSM2, DFGSM3), deadlines rattachées aux bonnes formations et filtrage strict des échéances précises.

@@ -18,7 +18,11 @@
       "lien_source_officielle": "https://www.messervices.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "DSE : 1er mars - 31 mai 2026"
+      "date_limite_2026_2027": "DSE : 1er mars - 31 mai 2026",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-002",
@@ -38,7 +42,11 @@
       "lien_source_officielle": "https://cvec.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-003",
@@ -58,7 +66,11 @@
       "lien_source_officielle": "https://www.service-public.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-004",
@@ -79,7 +91,11 @@
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
-      "financial_class": "benefit"
+      "financial_class": "benefit",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-005",
@@ -99,7 +115,11 @@
       "lien_source_officielle": "https://www.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "avec le DSE"
+      "date_limite_2026_2027": "avec le DSE",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-006",
@@ -119,7 +139,11 @@
       "lien_source_officielle": "https://www.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-007",
@@ -139,7 +163,11 @@
       "lien_source_officielle": "https://www.visale.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-008",
@@ -159,7 +187,11 @@
       "lien_source_officielle": "https://www.actionlogement.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-009",
@@ -179,7 +211,11 @@
       "lien_source_officielle": "https://www.caf.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-010",
@@ -199,7 +235,11 @@
       "lien_source_officielle": "https://www.messervices.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "1er mars - 31 mai 2026"
+      "date_limite_2026_2027": "1er mars - 31 mai 2026",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-048",
@@ -219,7 +259,11 @@
       "lien_source_officielle": "https://www.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "sur rendez-vous, toute l'année"
+      "date_limite_2026_2027": "sur rendez-vous, toute l'année",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-049",
@@ -239,7 +283,11 @@
       "lien_source_officielle": "https://www.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "sur rendez-vous, toute l'année"
+      "date_limite_2026_2027": "sur rendez-vous, toute l'année",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-050",
@@ -259,7 +307,11 @@
       "lien_source_officielle": "https://www.ameli.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-051",
@@ -279,7 +331,11 @@
       "lien_source_officielle": "https://www.enseignementsup-recherche.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-052",
@@ -299,7 +355,11 @@
       "lien_source_officielle": "https://www.bpifrance.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "financement",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-053",
@@ -319,7 +379,11 @@
       "lien_source_officielle": "https://www.service-public.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-076",
@@ -339,7 +403,11 @@
       "lien_source_officielle": "https://www.sncf-connect.com",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-011",
@@ -359,7 +427,11 @@
       "lien_source_officielle": "https://www.iledefrance-mobilites.fr/imagine-r",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "30 avril 2027"
+      "date_limite_2026_2027": "30 avril 2027",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-012",
@@ -379,7 +451,11 @@
       "lien_source_officielle": "https://www.paris.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-013",
@@ -399,7 +475,11 @@
       "lien_source_officielle": "https://www.tcl.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "01/09/2026"
+      "date_limite_2026_2027": "01/09/2026",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-014",
@@ -419,7 +499,11 @@
       "lien_source_officielle": "https://www.tcl.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-015",
@@ -439,7 +523,11 @@
       "lien_source_officielle": "https://www.tcl.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-016",
@@ -459,7 +547,11 @@
       "lien_source_officielle": "https://www.ilevia.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-017",
@@ -479,7 +571,11 @@
       "lien_source_officielle": "https://www.ilevia.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-018",
@@ -499,7 +595,11 @@
       "lien_source_officielle": "https://www.infotbm.com/fr/tarificationsolidaire",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-019",
@@ -519,7 +619,11 @@
       "lien_source_officielle": "https://www.bordeaux-metropole.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-020",
@@ -539,7 +643,11 @@
       "lien_source_officielle": "https://www.nouvelle-aquitaine.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-021",
@@ -559,7 +667,11 @@
       "lien_source_officielle": "https://www.tisseo.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-022",
@@ -579,7 +691,11 @@
       "lien_source_officielle": "https://www.tisseo.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-023",
@@ -599,7 +715,11 @@
       "lien_source_officielle": "https://www.tisseo.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-024",
@@ -619,7 +739,11 @@
       "lien_source_officielle": "https://metropole.toulouse.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-025",
@@ -639,7 +763,11 @@
       "lien_source_officielle": "https://www.laregion.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-026",
@@ -659,7 +787,11 @@
       "lien_source_officielle": "https://www.haute-garonne.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-027",
@@ -679,7 +811,11 @@
       "lien_source_officielle": "https://passjeunes.paris.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": "réservation 02/06-30/09"
+      "date_limite_2026_2027": "réservation 02/06-30/09",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-028",
@@ -699,7 +835,11 @@
       "lien_source_officielle": "https://mairie18.paris.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-029",
@@ -719,7 +859,11 @@
       "lien_source_officielle": "https://www.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-085",
@@ -739,7 +883,11 @@
       "lien_source_officielle": "https://pass.culture.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-086",
@@ -759,7 +907,11 @@
       "lien_source_officielle": "https://www.paris.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-087",
@@ -779,7 +931,11 @@
       "lien_source_officielle": "https://www.ugc.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-093",
@@ -799,7 +955,11 @@
       "lien_source_officielle": "https://www.comedie-francaise.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-094",
@@ -819,7 +979,11 @@
       "lien_source_officielle": "https://philharmoniedeparis.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-095",
@@ -839,7 +1003,11 @@
       "lien_source_officielle": "https://www.operadeparis.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-031",
@@ -859,7 +1027,11 @@
       "lien_source_officielle": "https://www.lyon.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-032",
@@ -879,7 +1051,11 @@
       "lien_source_officielle": "https://www.auvergnerhonealpes.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-033",
@@ -899,7 +1075,11 @@
       "lien_source_officielle": "https://www.ter.sncf.com",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-034",
@@ -919,7 +1099,11 @@
       "lien_source_officielle": "https://www.celestins-lyon.org",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-096",
@@ -939,7 +1123,11 @@
       "lien_source_officielle": "https://www.institut-lumiere.org",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-097",
@@ -959,7 +1147,11 @@
       "lien_source_officielle": "https://www.nuitsdefourviere.com",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-088",
@@ -979,7 +1171,11 @@
       "lien_source_officielle": "https://www.lyon.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-089",
@@ -999,7 +1195,11 @@
       "lien_source_officielle": "https://afev.org",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-035",
@@ -1019,7 +1219,11 @@
       "lien_source_officielle": "https://www.lillemetropole.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-036",
@@ -1039,7 +1243,11 @@
       "lien_source_officielle": "https://www.lille.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-037",
@@ -1059,7 +1267,11 @@
       "lien_source_officielle": "https://www.legrandmix.com",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-038",
@@ -1079,7 +1291,11 @@
       "lien_source_officielle": "https://www.opera-lille.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-098",
@@ -1099,7 +1315,11 @@
       "lien_source_officielle": "https://pba.lille.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-039",
@@ -1119,7 +1339,11 @@
       "lien_source_officielle": "https://afev.org/kaps",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-090",
@@ -1139,7 +1363,11 @@
       "lien_source_officielle": "https://www.lille.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-040",
@@ -1159,7 +1387,11 @@
       "lien_source_officielle": "https://www.bordeaux-metropole.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-041",
@@ -1179,7 +1411,11 @@
       "lien_source_officielle": "https://www.u-bordeaux.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-042",
@@ -1199,7 +1435,11 @@
       "lien_source_officielle": "https://www.bordeaux.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-043",
@@ -1219,7 +1459,11 @@
       "lien_source_officielle": "https://afev.org/kaps",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-044",
@@ -1239,7 +1483,11 @@
       "lien_source_officielle": "https://www.bordeaux.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-099",
@@ -1259,7 +1507,11 @@
       "lien_source_officielle": "https://www.opera-bordeaux.com",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-091",
@@ -1279,7 +1531,11 @@
       "lien_source_officielle": "https://www.bordeaux.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-045",
@@ -1299,7 +1555,11 @@
       "lien_source_officielle": "https://www.laregion.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-100",
@@ -1319,7 +1579,11 @@
       "lien_source_officielle": "https://metropole.toulouse.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-101",
@@ -1339,7 +1603,11 @@
       "lien_source_officielle": "https://opera.toulouse.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-102",
@@ -1359,7 +1627,11 @@
       "lien_source_officielle": "https://welcomedesk.univ-toulouse.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-046",
@@ -1379,7 +1651,11 @@
       "lien_source_officielle": "https://welcomedesk.univ-toulouse.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-047",
@@ -1399,7 +1675,11 @@
       "lien_source_officielle": "https://welcomedesk.univ-toulouse.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-092",
@@ -1419,7 +1699,11 @@
       "lien_source_officielle": "https://metropole.toulouse.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-080",
@@ -1439,7 +1723,11 @@
       "lien_source_officielle": "https://www.velib-metropole.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-081",
@@ -1459,7 +1747,11 @@
       "lien_source_officielle": "https://velov.grandlyon.com",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-082",
@@ -1479,7 +1771,11 @@
       "lien_source_officielle": "https://www.ilevia.fr",
       "statut_verification": "🟠 à vérifier",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-083",
@@ -1499,7 +1795,11 @@
       "lien_source_officielle": "https://www.infotbm.com",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-084",
@@ -1519,7 +1819,11 @@
       "lien_source_officielle": "https://velotoulouse.tisseo.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-103",
@@ -1541,7 +1845,12 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
       "financial_class": "cost",
-      "value_mode": "price"
+      "value_mode": "price",
+      "age_min": 18,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-104",
@@ -1563,7 +1872,14 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
       "financial_class": "saving",
-      "value_mode": "variable"
+      "value_mode": "variable",
+      "qf_max": 900,
+      "verification_required": true,
+      "required_profile_fields": [
+        "quotient_familial"
+      ],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-105",
@@ -1585,7 +1901,11 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
       "financial_class": "cost",
-      "value_mode": "price"
+      "value_mode": "price",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-106",
@@ -1609,7 +1929,11 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
       "financial_class": "aid",
-      "value_mode": "max"
+      "value_mode": "max",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-107",
@@ -1633,7 +1957,11 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
       "financial_class": "aid",
-      "value_mode": "max"
+      "value_mode": "max",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "aide",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-108",
@@ -1656,7 +1984,13 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": "2026-08-27",
       "financial_class": "benefit",
-      "value_mode": "variable"
+      "value_mode": "variable",
+      "verification_required": true,
+      "required_profile_fields": [
+        "quotient_familial"
+      ],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-109",
@@ -1677,7 +2011,11 @@
       "lien_source_officielle": "https://www.grenoble.fr/demarche/486/659-s-inscrire-a-la-bibliotheque-municipale.htm",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-110",
@@ -1698,7 +2036,11 @@
       "lien_source_officielle": "https://www.grenoble.fr/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-111",
@@ -1719,7 +2061,11 @@
       "lien_source_officielle": "https://www.grenoble.fr/199-informations-pratiques.htm",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-112",
@@ -1749,7 +2095,11 @@
       "lien_source_officielle": "https://suaps.univ-grenoble-alpes.fr/menu-principal/installations/la-piscine-universitaire/tarifs-et-abonnements/tarifs-et-abonnements-577064.kjsp",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-113",
@@ -1770,7 +2120,11 @@
       "lien_source_officielle": "https://santepsy.etudiant.gouv.fr",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-114",
@@ -1800,7 +2154,11 @@
       "lien_source_officielle": "https://etudiant.univ-grenoble-alpes.fr/sante-et-bien-etre/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-115",
@@ -1821,7 +2179,11 @@
       "lien_source_officielle": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-116",
@@ -1842,7 +2204,11 @@
       "lien_source_officielle": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-117",
@@ -1869,7 +2235,11 @@
       "lien_source_officielle": "https://www.crous-grenoble.fr/se-loger/faire-une-demande-de-logement-dans-une-residence-crous/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": "30 octobre 2026"
+      "date_limite_2026_2027": "30 octobre 2026",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-118",
@@ -1894,7 +2264,11 @@
       "lien_source_officielle": "https://www.crous-grenoble.fr/se-loger/la-ruche-dispositif-accompagnement-en-logement-etudiant-pour-les-etudiants-de-but-a-grenoble/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-119",
@@ -1924,7 +2298,11 @@
       "lien_source_officielle": "https://suaps.univ-grenoble-alpes.fr/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-120",
@@ -1945,7 +2323,11 @@
       "lien_source_officielle": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-121",
@@ -1968,7 +2350,11 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": "2026-09-10",
       "value_mode": "variable",
-      "source_kind": "commercial_first_party"
+      "source_kind": "commercial_first_party",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-122",
@@ -1992,7 +2378,11 @@
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
       "value_mode": "price",
-      "source_kind": "commercial_first_party"
+      "source_kind": "commercial_first_party",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-123",
@@ -2014,7 +2404,11 @@
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
-      "value_mode": "percentage"
+      "value_mode": "percentage",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-124",
@@ -2038,7 +2432,13 @@
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
-      "value_mode": "variable"
+      "value_mode": "variable",
+      "verification_required": true,
+      "required_profile_fields": [
+        "quotient_familial"
+      ],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-125",
@@ -2060,7 +2460,11 @@
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
-      "value_mode": "price"
+      "value_mode": "price",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-126",
@@ -2082,7 +2486,11 @@
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
       "date_limite_2026_2027": null,
-      "value_mode": "percentage"
+      "value_mode": "percentage",
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "avantage",
+      "include_in_savings_total": false
     },
     {
       "id": "OPP-127",
@@ -2104,7 +2512,11 @@
       "lien_source_officielle": "https://www.grenoble.fr/lieu/134/137-la-chaufferie.htm",
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-22",
-      "date_limite_2026_2027": null
+      "date_limite_2026_2027": null,
+      "verification_required": false,
+      "required_profile_fields": [],
+      "financial_bucket": "service",
+      "include_in_savings_total": false
     }
   ],
   "deadlines": [
@@ -2353,7 +2765,7 @@
       "date_fin": "2026-08-27",
       "urgence_indicative": "🔴 proche",
       "formations_requises": [
-        "FOR-055"
+        "FOR-056"
       ]
     },
     {
@@ -2366,7 +2778,7 @@
       "date_fin": "2026-09-07",
       "urgence_indicative": "🟠 rentrée",
       "formations_requises": [
-        "FOR-056"
+        "FOR-065"
       ]
     },
     {
@@ -2379,7 +2791,7 @@
       "date_fin": "2026-09-06",
       "urgence_indicative": "🔴 action recommandée",
       "formations_requises": [
-        "FOR-056"
+        "FOR-065"
       ]
     },
     {
@@ -2392,7 +2804,7 @@
       "date_fin": "2026-08-31",
       "urgence_indicative": "🔴 proche",
       "formations_requises": [
-        "FOR-057"
+        "FOR-066"
       ]
     },
     {
@@ -3361,9 +3773,9 @@
     },
     {
       "id": "FOR-056",
-      "etablissement_id": "EST-117",
-      "nom": "PASS / accès santé",
-      "niveau": "1re année"
+      "etablissement_id": "EST-123",
+      "nom": "PASS / accès santé — UFR Médecine UGA",
+      "niveau": "L1"
     },
     {
       "id": "FOR-057",
@@ -3412,6 +3824,18 @@
       "etablissement_id": "EST-117",
       "nom": "Master 2 — UGA",
       "niveau": "M2"
+    },
+    {
+      "id": "FOR-065",
+      "etablissement_id": "EST-123",
+      "nom": "DFGSM2 — 2e année de médecine",
+      "niveau": "L2"
+    },
+    {
+      "id": "FOR-066",
+      "etablissement_id": "EST-123",
+      "nom": "DFGSM3 — 3e année de médecine",
+      "niveau": "L3"
     }
   ],
   "sources": [
@@ -3557,5 +3981,17 @@
       "transport": "Tisséo",
       "permis_voiture": "non"
     }
-  ]
+  ],
+  "audit": {
+    "version": "3.7",
+    "ville_pilote": "Grenoble",
+    "date": "2026-08-22",
+    "status": "profils_reels_corriges",
+    "corrections": [
+      "Hiérarchie UFR Médecine corrigée",
+      "DFGSM2 et DFGSM3 créés comme formations distinctes",
+      "Deadlines médecine reliées aux bons cursus",
+      "Planning établissement/formation rendu plus strict"
+    ]
+  }
 }

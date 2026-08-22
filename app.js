@@ -13,7 +13,7 @@ function saveCompleted(){ localStorage.setItem('campusflow_completed', JSON.stri
 
 const FALLBACK_CITIES = ['Paris','Lyon','Lille','Bordeaux','Toulouse','Grenoble'];
 
-fetch('data.json?v=3.3')
+fetch('data.json?v=3.7')
   .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then(json=>{ DATA={...DATA,...json}; init(); })
   .catch(err=>{
@@ -221,10 +221,10 @@ function parseDeadlineDate(d){ const raw=d.date_fin||d.date_debut; if(!raw)retur
 function deadlineMatchesProfile(d){
   const loc=(d.ville_ou_perimetre||'');
   if(!(loc==='France entière'||!PROFILE.ville||loc===PROFILE.ville)) return false;
-  if(d.etablissements_requis?.length && PROFILE.etablissement && !d.etablissements_requis.includes(PROFILE.etablissement)) return false;
+  if(d.etablissements_requis?.length){ if(!PROFILE.etablissement || !d.etablissements_requis.includes(PROFILE.etablissement)) return false; }
   if(d.formations_requises?.length){ if(!PROFILE.formation || !d.formations_requises.includes(PROFILE.formation)) return false; }
-  if(d.niveaux_requis?.length && PROFILE.niveau && !d.niveaux_requis.includes(PROFILE.niveau)) return false;
-  if(d.logements_requis?.length && PROFILE.logement && !d.logements_requis.includes(PROFILE.logement)) return false;
+  if(d.niveaux_requis?.length){ if(!PROFILE.niveau || !d.niveaux_requis.includes(PROFILE.niveau)) return false; }
+  if(d.logements_requis?.length){ if(!PROFILE.logement || !d.logements_requis.includes(PROFILE.logement)) return false; }
   return true;
 }
 function relevantDeadlines(){ const now=new Date(); return DATA.deadlines.filter(d=>{
