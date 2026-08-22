@@ -11,9 +11,17 @@ function saveProfile(){ localStorage.setItem('campusflow_profile', JSON.stringif
 function loadCompleted(){ try { return JSON.parse(localStorage.getItem('campusflow_completed')) || []; } catch { return []; } }
 function saveCompleted(){ localStorage.setItem('campusflow_completed', JSON.stringify(COMPLETED)); }
 
-fetch('data.json').then(r=>r.json()).then(json=>{ DATA={...DATA,...json}; init(); }).catch(err=>{
-  console.error(err); $('#opp-list').innerHTML='<div class="empty-state">Impossible de charger la base de données.</div>';
-});
+const FALLBACK_CITIES = ['Paris','Lyon','Lille','Bordeaux','Toulouse','Grenoble'];
+
+fetch('data.json?v=2.1')
+  .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(json=>{ DATA={...DATA,...json}; init(); })
+  .catch(err=>{
+    console.error('CampusFlow data loading error', err);
+    // L'interface reste utilisable : les villes de lancement sont disponibles en secours.
+    init();
+    $('#opp-list').innerHTML='<div class="empty-state">La base distante n’a pas pu être chargée. Réessaie en actualisant la page.</div>';
+  });
 
 function init(){ renderProfileForm(); renderIdCard(); renderFilters(); renderOpportunities(); renderDeadlines(); renderHome(); bindNav(); bindSheet(); }
 
@@ -144,7 +152,12 @@ function toggleCompleted(id){ COMPLETED=COMPLETED.includes(id)?COMPLETED.filter(
 function renderDeadlines(){ const buckets={red:[],orange:[],green:[]}; relevantDeadlines().forEach(d=>buckets[urgencyBucket(d)].push(d)); ['red','orange','green'].forEach(k=>{const el=$(`#deadlines-${k}`);el.innerHTML='';if(!buckets[k].length)el.innerHTML='<div class="empty-state compact">Rien ici.</div>';buckets[k].forEach(d=>el.appendChild(deadlineRow(d)));}); }
 
 function renderProfileForm(){
- const cities=['',...new Set(DATA.opportunities.map(o=>o.ville).filter(Boolean))].sort(); $('#f-ville').innerHTML='<option value="">Choisir une ville</option>'+cities.map(v=>`<option>${escapeHtml(v)}</option>`).join('');
+ const dataCities=[...new Set([
+   ...DATA.opportunities.map(o=>o.ville),
+   ...DATA.establishments.map(e=>e.ville)
+ ].filter(Boolean))];
+ const cities=[...new Set([...FALLBACK_CITIES,...dataCities])].sort((a,b)=>a.localeCompare(b,'fr'));
+ $('#f-ville').innerHTML='<option value="">Choisir une ville</option>'+cities.map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('');
  $('#f-ville').value=PROFILE.ville||''; $('#f-ville-residence').value=PROFILE.villeResidence||''; $('#f-age').value=PROFILE.age||''; $('#f-niveau').value=PROFILE.niveau||''; $('#f-logement').value=PROFILE.logement||''; $('#f-transport').value=PROFILE.transport||''; $('#f-qf').value=PROFILE.qf||'';
  updateEstablishments();
  $('#f-ville').onchange=()=>{ PROFILE.ville=$('#f-ville').value; updateEstablishments(); };

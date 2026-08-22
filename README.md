@@ -34,3 +34,9 @@ Puis ouvrir `http://localhost:8000`.
 ## Étape suivante recommandée
 
 Tester le MVP avec de vrais étudiants avant de brancher un backend. Si l'usage est validé : migration de `data.json` et du profil local vers Supabase, puis authentification, rappels et éventuellement Stripe.
+
+
+## V2.1
+- Correctif du sélecteur de ville d’étude sur GitHub Pages.
+- Paris, Lyon, Lille, Bordeaux, Toulouse et Grenoble sont disponibles même en cas de problème de chargement de data.json.
+- Cache-busting sur app.js, style.css et data.json pour éviter que Safari conserve une ancienne version.
