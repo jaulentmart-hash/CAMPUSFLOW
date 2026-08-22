@@ -73,3 +73,11 @@ Parcours profil refondu et 159 nouvelles entrées cursus/année Grenoble ajouté
 
 ## V4 Grenoble bêta
 Accueil priorisé, dates clés détaillées et cliquables, liens officiels directs, ajout Google Agenda, notifications web expérimentales, correction du matching DFGSM2/DFGSM3 et calendrier UGA 2026-2027.
+
+## V4.1
+- code couleur transversal : National (bleu), Université (violet), Local (orange) ;
+- score de complétion du profil et critères à renseigner ;
+- estimation des dispositifs pouvant être mieux vérifiés ;
+- niveau de confiance sur chaque recommandation ;
+- bloc « Pourquoi CampusFlow te montre ça » ;
+- même taxonomie appliquée aux échéances.

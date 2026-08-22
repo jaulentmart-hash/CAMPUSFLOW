@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#f5f7fb">
 <title>CampusFlow — ton copilote étudiant</title>
-<link rel="stylesheet" href="style.css?v=4.0">
+<link rel="stylesheet" href="style.css?v=4.1">
 </head>
 <body>
 <header class="app-header">
@@ -71,6 +71,7 @@
 </section>
 
 <section class="page" id="page-opportunites">
+  <div class="origin-legend"><span class="origin-chip origin-national">National</span><span class="origin-chip origin-universite">Université</span><span class="origin-chip origin-local">Local</span></div>
   <div class="page-title-row"><div><div class="eyebrow">OPPORTUNITÉS</div><h1>Les aides qui peuvent te concerner</h1><p>Filtrées selon ton profil, ta ville et ta situation.</p></div></div>
   <div class="toolbar-card">
     <input id="opp-search" class="search-input" placeholder="Rechercher une aide, un transport, une réduction…">
@@ -80,6 +81,7 @@
 </section>
 
 <section class="page" id="page-planning">
+  <div class="origin-legend"><span class="origin-chip origin-national">National</span><span class="origin-chip origin-universite">Université</span><span class="origin-chip origin-local">Local</span></div>
   <div class="page-title-row"><div><div class="eyebrow">PLANNING</div><h1>Mes dates clés</h1><p>Ouvre une échéance pour voir exactement quoi faire et la source officielle.</p></div><button class="secondary-btn notification-btn" id="enable-notifications">Activer les rappels</button></div>
   <div class="calendar-summary" id="calendar-summary"></div>
   <div class="planning-grid">
@@ -123,6 +125,6 @@
 </main>
 
 <div class="sheet-overlay" id="sheet-overlay"><div class="sheet"><button class="sheet-x" id="sheet-x">×</button><div id="sheet-content"></div></div></div>
-<script src="app.js?v=4.0"></script>
+<script src="app.js?v=4.1"></script>
 </body>
 </html>

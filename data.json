@@ -23,7 +23,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.messervices.etudiant.gouv.fr"
+      "action_url": "https://www.messervices.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-002",
@@ -48,7 +49,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://cvec.etudiant.gouv.fr"
+      "action_url": "https://cvec.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-003",
@@ -73,7 +75,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.service-public.fr"
+      "action_url": "https://www.service-public.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-004",
@@ -99,7 +102,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.crous-grenoble.fr/se-restaurer/payer-son-repas/des-repas-a-tarif-social-pour-tous-les-etudiants/"
+      "action_url": "https://www.crous-grenoble.fr/se-restaurer/payer-son-repas/des-repas-a-tarif-social-pour-tous-les-etudiants/",
+      "origine": "national"
     },
     {
       "id": "OPP-005",
@@ -124,7 +128,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.etudiant.gouv.fr"
+      "action_url": "https://www.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-006",
@@ -149,7 +154,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.etudiant.gouv.fr"
+      "action_url": "https://www.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-007",
@@ -174,7 +180,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.visale.fr"
+      "action_url": "https://www.visale.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-008",
@@ -199,7 +206,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.actionlogement.fr"
+      "action_url": "https://www.actionlogement.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-009",
@@ -224,7 +232,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.caf.fr"
+      "action_url": "https://www.caf.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-010",
@@ -249,7 +258,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://www.messervices.etudiant.gouv.fr"
+      "action_url": "https://www.messervices.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-048",
@@ -274,7 +284,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.etudiant.gouv.fr"
+      "action_url": "https://www.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-049",
@@ -299,7 +310,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.etudiant.gouv.fr"
+      "action_url": "https://www.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-050",
@@ -324,7 +336,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://www.ameli.fr"
+      "action_url": "https://www.ameli.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-051",
@@ -349,7 +362,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.enseignementsup-recherche.gouv.fr"
+      "action_url": "https://www.enseignementsup-recherche.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-052",
@@ -374,7 +388,8 @@
       "required_profile_fields": [],
       "financial_bucket": "financement",
       "include_in_savings_total": false,
-      "action_url": "https://www.bpifrance.fr"
+      "action_url": "https://www.bpifrance.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-053",
@@ -399,7 +414,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://www.service-public.fr"
+      "action_url": "https://www.service-public.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-076",
@@ -424,7 +440,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.sncf-connect.com"
+      "action_url": "https://www.sncf-connect.com",
+      "origine": "national"
     },
     {
       "id": "OPP-011",
@@ -449,7 +466,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.iledefrance-mobilites.fr/imagine-r"
+      "action_url": "https://www.iledefrance-mobilites.fr/imagine-r",
+      "origine": "local"
     },
     {
       "id": "OPP-012",
@@ -474,7 +492,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.paris.fr"
+      "action_url": "https://www.paris.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-013",
@@ -499,7 +518,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.tcl.fr"
+      "action_url": "https://www.tcl.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-014",
@@ -524,7 +544,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.tcl.fr"
+      "action_url": "https://www.tcl.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-015",
@@ -549,7 +570,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.tcl.fr"
+      "action_url": "https://www.tcl.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-016",
@@ -574,7 +596,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.ilevia.fr"
+      "action_url": "https://www.ilevia.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-017",
@@ -599,7 +622,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.ilevia.fr"
+      "action_url": "https://www.ilevia.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-018",
@@ -624,7 +648,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.infotbm.com/fr/tarificationsolidaire"
+      "action_url": "https://www.infotbm.com/fr/tarificationsolidaire",
+      "origine": "local"
     },
     {
       "id": "OPP-019",
@@ -649,7 +674,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.bordeaux-metropole.fr"
+      "action_url": "https://www.bordeaux-metropole.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-020",
@@ -674,7 +700,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.nouvelle-aquitaine.fr"
+      "action_url": "https://www.nouvelle-aquitaine.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-021",
@@ -699,7 +726,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.tisseo.fr"
+      "action_url": "https://www.tisseo.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-022",
@@ -724,7 +752,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.tisseo.fr"
+      "action_url": "https://www.tisseo.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-023",
@@ -749,7 +778,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.tisseo.fr"
+      "action_url": "https://www.tisseo.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-024",
@@ -774,7 +804,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://metropole.toulouse.fr"
+      "action_url": "https://metropole.toulouse.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-025",
@@ -799,7 +830,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.laregion.fr"
+      "action_url": "https://www.laregion.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-026",
@@ -824,7 +856,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://www.haute-garonne.fr"
+      "action_url": "https://www.haute-garonne.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-027",
@@ -849,7 +882,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://passjeunes.paris.fr"
+      "action_url": "https://passjeunes.paris.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-028",
@@ -874,7 +908,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://mairie18.paris.fr"
+      "action_url": "https://mairie18.paris.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-029",
@@ -899,7 +934,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.etudiant.gouv.fr"
+      "action_url": "https://www.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-085",
@@ -924,7 +960,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://pass.culture.fr"
+      "action_url": "https://pass.culture.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-086",
@@ -949,7 +986,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.paris.fr"
+      "action_url": "https://www.paris.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-087",
@@ -974,7 +1012,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.ugc.fr"
+      "action_url": "https://www.ugc.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-093",
@@ -999,7 +1038,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.comedie-francaise.fr"
+      "action_url": "https://www.comedie-francaise.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-094",
@@ -1024,7 +1064,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://philharmoniedeparis.fr"
+      "action_url": "https://philharmoniedeparis.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-095",
@@ -1049,7 +1090,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.operadeparis.fr"
+      "action_url": "https://www.operadeparis.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-031",
@@ -1074,7 +1116,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.lyon.fr"
+      "action_url": "https://www.lyon.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-032",
@@ -1099,7 +1142,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.auvergnerhonealpes.fr"
+      "action_url": "https://www.auvergnerhonealpes.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-033",
@@ -1124,7 +1168,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.ter.sncf.com"
+      "action_url": "https://www.ter.sncf.com",
+      "origine": "local"
     },
     {
       "id": "OPP-034",
@@ -1149,7 +1194,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.celestins-lyon.org"
+      "action_url": "https://www.celestins-lyon.org",
+      "origine": "local"
     },
     {
       "id": "OPP-096",
@@ -1174,7 +1220,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.institut-lumiere.org"
+      "action_url": "https://www.institut-lumiere.org",
+      "origine": "local"
     },
     {
       "id": "OPP-097",
@@ -1199,7 +1246,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.nuitsdefourviere.com"
+      "action_url": "https://www.nuitsdefourviere.com",
+      "origine": "local"
     },
     {
       "id": "OPP-088",
@@ -1224,7 +1272,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.lyon.fr"
+      "action_url": "https://www.lyon.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-089",
@@ -1249,7 +1298,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://afev.org"
+      "action_url": "https://afev.org",
+      "origine": "local"
     },
     {
       "id": "OPP-035",
@@ -1274,7 +1324,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.lillemetropole.fr"
+      "action_url": "https://www.lillemetropole.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-036",
@@ -1299,7 +1350,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.lille.fr"
+      "action_url": "https://www.lille.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-037",
@@ -1324,7 +1376,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.legrandmix.com"
+      "action_url": "https://www.legrandmix.com",
+      "origine": "local"
     },
     {
       "id": "OPP-038",
@@ -1349,7 +1402,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.opera-lille.fr"
+      "action_url": "https://www.opera-lille.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-098",
@@ -1374,7 +1428,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://pba.lille.fr"
+      "action_url": "https://pba.lille.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-039",
@@ -1399,7 +1454,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://afev.org/kaps"
+      "action_url": "https://afev.org/kaps",
+      "origine": "local"
     },
     {
       "id": "OPP-090",
@@ -1424,7 +1480,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.lille.fr"
+      "action_url": "https://www.lille.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-040",
@@ -1449,7 +1506,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.bordeaux-metropole.fr"
+      "action_url": "https://www.bordeaux-metropole.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-041",
@@ -1474,7 +1532,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.u-bordeaux.fr"
+      "action_url": "https://www.u-bordeaux.fr",
+      "origine": "universite"
     },
     {
       "id": "OPP-042",
@@ -1499,7 +1558,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.bordeaux.fr"
+      "action_url": "https://www.bordeaux.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-043",
@@ -1524,7 +1584,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://afev.org/kaps"
+      "action_url": "https://afev.org/kaps",
+      "origine": "local"
     },
     {
       "id": "OPP-044",
@@ -1549,7 +1610,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.bordeaux.fr"
+      "action_url": "https://www.bordeaux.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-099",
@@ -1574,7 +1636,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.opera-bordeaux.com"
+      "action_url": "https://www.opera-bordeaux.com",
+      "origine": "local"
     },
     {
       "id": "OPP-091",
@@ -1599,7 +1662,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.bordeaux.fr"
+      "action_url": "https://www.bordeaux.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-045",
@@ -1624,7 +1688,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.laregion.fr"
+      "action_url": "https://www.laregion.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-100",
@@ -1649,7 +1714,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://metropole.toulouse.fr"
+      "action_url": "https://metropole.toulouse.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-101",
@@ -1674,7 +1740,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://opera.toulouse.fr"
+      "action_url": "https://opera.toulouse.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-102",
@@ -1699,7 +1766,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://welcomedesk.univ-toulouse.fr"
+      "action_url": "https://welcomedesk.univ-toulouse.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-046",
@@ -1724,7 +1792,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://welcomedesk.univ-toulouse.fr"
+      "action_url": "https://welcomedesk.univ-toulouse.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-047",
@@ -1749,7 +1818,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://welcomedesk.univ-toulouse.fr"
+      "action_url": "https://welcomedesk.univ-toulouse.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-092",
@@ -1774,7 +1844,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://metropole.toulouse.fr"
+      "action_url": "https://metropole.toulouse.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-080",
@@ -1799,7 +1870,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.velib-metropole.fr"
+      "action_url": "https://www.velib-metropole.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-081",
@@ -1824,7 +1896,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://velov.grandlyon.com"
+      "action_url": "https://velov.grandlyon.com",
+      "origine": "local"
     },
     {
       "id": "OPP-082",
@@ -1849,7 +1922,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.ilevia.fr"
+      "action_url": "https://www.ilevia.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-083",
@@ -1874,7 +1948,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.infotbm.com"
+      "action_url": "https://www.infotbm.com",
+      "origine": "local"
     },
     {
       "id": "OPP-084",
@@ -1899,7 +1974,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://velotoulouse.tisseo.fr"
+      "action_url": "https://velotoulouse.tisseo.fr",
+      "origine": "local"
     },
     {
       "id": "OPP-103",
@@ -1927,7 +2003,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.reso-m.fr/779-nouveaux-tarifs-rentree-2026.htm"
+      "action_url": "https://www.reso-m.fr/779-nouveaux-tarifs-rentree-2026.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-104",
@@ -1957,7 +2034,8 @@
       ],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.reso-m.fr/68-tarification-solidaire.htm"
+      "action_url": "https://www.reso-m.fr/68-tarification-solidaire.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-105",
@@ -1984,7 +2062,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/demarche/495/246-se-rendre-dans-une-piscine-municipale.htm"
+      "action_url": "https://www.grenoble.fr/demarche/495/246-se-rendre-dans-une-piscine-municipale.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-106",
@@ -2013,7 +2092,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/demarche/548/659-candidater-au-dispositif-jeunesse-act-ive-fij-bafa-destination-vacances.htm"
+      "action_url": "https://www.grenoble.fr/demarche/548/659-candidater-au-dispositif-jeunesse-act-ive-fij-bafa-destination-vacances.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-107",
@@ -2042,7 +2122,8 @@
       "required_profile_fields": [],
       "financial_bucket": "aide",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/demarche/548/659-candidater-au-dispositif-jeunesse-act-ive-fij-bafa-destination-vacances.htm"
+      "action_url": "https://www.grenoble.fr/demarche/548/659-candidater-au-dispositif-jeunesse-act-ive-fij-bafa-destination-vacances.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-108",
@@ -2072,7 +2153,8 @@
       ],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/744-bourses.htm"
+      "action_url": "https://www.grenoble.fr/744-bourses.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-109",
@@ -2098,7 +2180,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/demarche/486/659-s-inscrire-a-la-bibliotheque-municipale.htm"
+      "action_url": "https://www.grenoble.fr/demarche/486/659-s-inscrire-a-la-bibliotheque-municipale.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-110",
@@ -2124,7 +2207,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/"
+      "action_url": "https://www.grenoble.fr/",
+      "origine": "local"
     },
     {
       "id": "OPP-111",
@@ -2150,7 +2234,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/199-informations-pratiques.htm"
+      "action_url": "https://www.grenoble.fr/199-informations-pratiques.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-112",
@@ -2185,7 +2270,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://suaps.univ-grenoble-alpes.fr/menu-principal/installations/la-piscine-universitaire/tarifs-et-abonnements/tarifs-et-abonnements-577064.kjsp"
+      "action_url": "https://suaps.univ-grenoble-alpes.fr/menu-principal/installations/la-piscine-universitaire/tarifs-et-abonnements/tarifs-et-abonnements-577064.kjsp",
+      "origine": "universite"
     },
     {
       "id": "OPP-113",
@@ -2211,7 +2297,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://santepsy.etudiant.gouv.fr"
+      "action_url": "https://santepsy.etudiant.gouv.fr",
+      "origine": "national"
     },
     {
       "id": "OPP-114",
@@ -2246,7 +2333,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://etudiant.univ-grenoble-alpes.fr/sante-et-bien-etre/"
+      "action_url": "https://etudiant.univ-grenoble-alpes.fr/sante-et-bien-etre/",
+      "origine": "universite"
     },
     {
       "id": "OPP-115",
@@ -2272,7 +2360,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/"
+      "action_url": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/",
+      "origine": "local"
     },
     {
       "id": "OPP-116",
@@ -2298,7 +2387,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/"
+      "action_url": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/",
+      "origine": "local"
     },
     {
       "id": "OPP-117",
@@ -2330,7 +2420,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://www.crous-grenoble.fr/se-loger/faire-une-demande-de-logement-dans-une-residence-crous/"
+      "action_url": "https://www.crous-grenoble.fr/se-loger/faire-une-demande-de-logement-dans-une-residence-crous/",
+      "origine": "local"
     },
     {
       "id": "OPP-118",
@@ -2360,7 +2451,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://www.crous-grenoble.fr/se-loger/la-ruche-dispositif-accompagnement-en-logement-etudiant-pour-les-etudiants-de-but-a-grenoble/"
+      "action_url": "https://www.crous-grenoble.fr/se-loger/la-ruche-dispositif-accompagnement-en-logement-etudiant-pour-les-etudiants-de-but-a-grenoble/",
+      "origine": "universite"
     },
     {
       "id": "OPP-119",
@@ -2395,7 +2487,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://suaps.univ-grenoble-alpes.fr/"
+      "action_url": "https://suaps.univ-grenoble-alpes.fr/",
+      "origine": "universite"
     },
     {
       "id": "OPP-120",
@@ -2421,7 +2514,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/"
+      "action_url": "https://etudiant.univ-grenoble-alpes.fr/votre-situation/etudiant-en-difficulte/",
+      "origine": "universite"
     },
     {
       "id": "OPP-121",
@@ -2449,7 +2543,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.emblemgrenoble.com/home"
+      "action_url": "https://www.emblemgrenoble.com/home",
+      "origine": "local"
     },
     {
       "id": "OPP-122",
@@ -2478,7 +2573,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.emblemgrenoble.com/partenaire/les-2-alpes"
+      "action_url": "https://www.emblemgrenoble.com/partenaire/les-2-alpes",
+      "origine": "local"
     },
     {
       "id": "OPP-123",
@@ -2505,7 +2601,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/demarche/1308/659-adherer-a-la-mutuelle-communale-de-grenoble.htm"
+      "action_url": "https://www.grenoble.fr/demarche/1308/659-adherer-a-la-mutuelle-communale-de-grenoble.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-124",
@@ -2536,7 +2633,8 @@
       ],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/demarche/1284/659-demander-une-aide-a-la-mobilite.htm"
+      "action_url": "https://www.grenoble.fr/demarche/1284/659-demander-une-aide-a-la-mobilite.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-125",
@@ -2563,7 +2661,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/88-tarifs.htm"
+      "action_url": "https://www.grenoble.fr/88-tarifs.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-126",
@@ -2590,7 +2689,8 @@
       "required_profile_fields": [],
       "financial_bucket": "avantage",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/article/1291/567-au-local-investit-l-espace-de-vie-sociale-presqu-ile-aux-tresors.htm"
+      "action_url": "https://www.grenoble.fr/article/1291/567-au-local-investit-l-espace-de-vie-sociale-presqu-ile-aux-tresors.htm",
+      "origine": "local"
     },
     {
       "id": "OPP-127",
@@ -2617,7 +2717,8 @@
       "required_profile_fields": [],
       "financial_bucket": "service",
       "include_in_savings_total": false,
-      "action_url": "https://www.grenoble.fr/lieu/134/137-la-chaufferie.htm"
+      "action_url": "https://www.grenoble.fr/lieu/134/137-la-chaufferie.htm",
+      "origine": "local"
     }
   ],
   "deadlines": [
@@ -2629,7 +2730,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": "2026-03-01",
       "date_fin": "2026-05-31",
-      "urgence_indicative": "🟠 selon date"
+      "urgence_indicative": "🟠 selon date",
+      "origine": "national"
     },
     {
       "id": "DL-002",
@@ -2639,7 +2741,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": "2026-05-05",
       "date_fin": "2026-05-31",
-      "urgence_indicative": "🟠 selon date"
+      "urgence_indicative": "🟠 selon date",
+      "origine": "national"
     },
     {
       "id": "DL-003",
@@ -2649,7 +2752,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": "2026-07-07",
       "date_fin": null,
-      "urgence_indicative": "🟢 informatif"
+      "urgence_indicative": "🟢 informatif",
+      "origine": "national"
     },
     {
       "id": "DL-004",
@@ -2659,7 +2763,8 @@
       "ville_ou_perimetre": "Paris",
       "date_debut": "2026-01-01",
       "date_fin": "2027-04-30",
-      "urgence_indicative": "🟠 selon date"
+      "urgence_indicative": "🟠 selon date",
+      "origine": "national"
     },
     {
       "id": "DL-005",
@@ -2669,7 +2774,8 @@
       "ville_ou_perimetre": "Paris",
       "date_debut": null,
       "date_fin": "2026-12-15",
-      "urgence_indicative": "🟠 selon date"
+      "urgence_indicative": "🟠 selon date",
+      "origine": "national"
     },
     {
       "id": "DL-006",
@@ -2679,7 +2785,8 @@
       "ville_ou_perimetre": "Toulouse",
       "date_debut": "2026-07-01",
       "date_fin": null,
-      "urgence_indicative": "🟢 informatif"
+      "urgence_indicative": "🟢 informatif",
+      "origine": "national"
     },
     {
       "id": "DL-007",
@@ -2689,7 +2796,8 @@
       "ville_ou_perimetre": "Lyon",
       "date_debut": "2026-09-01",
       "date_fin": null,
-      "urgence_indicative": "🟢 informatif"
+      "urgence_indicative": "🟢 informatif",
+      "origine": "national"
     },
     {
       "id": "DL-008",
@@ -2699,7 +2807,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": "2026-01-19",
       "date_fin": "2026-03-12",
-      "urgence_indicative": "🟢 informatif (session passée, sert de référence)"
+      "urgence_indicative": "🟢 informatif (session passée, sert de référence)",
+      "origine": "universite"
     },
     {
       "id": "DL-009",
@@ -2709,7 +2818,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": null,
       "date_fin": "2026-04-02",
-      "urgence_indicative": "🟢 informatif (référence)"
+      "urgence_indicative": "🟢 informatif (référence)",
+      "origine": "national"
     },
     {
       "id": "DL-010",
@@ -2719,7 +2829,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": "2026-06-02",
       "date_fin": "2026-07-11",
-      "urgence_indicative": "🟢 informatif (référence)"
+      "urgence_indicative": "🟢 informatif (référence)",
+      "origine": "national"
     },
     {
       "id": "DL-011",
@@ -2729,7 +2840,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": "2026-06-11",
       "date_fin": "2026-09-10",
-      "urgence_indicative": "🟢 informatif (référence)"
+      "urgence_indicative": "🟢 informatif (référence)",
+      "origine": "national"
     },
     {
       "id": "DL-012",
@@ -2739,7 +2851,8 @@
       "ville_ou_perimetre": "Grenoble",
       "date_debut": "2026-09-01",
       "date_fin": null,
-      "urgence_indicative": "🟢 informatif"
+      "urgence_indicative": "🟢 informatif",
+      "origine": "local"
     },
     {
       "id": "DL-013",
@@ -2751,7 +2864,8 @@
       "date_fin": "2026-09-15",
       "urgence_indicative": "🟠 action recommandée",
       "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/formation/admissions-et-inscriptions/candidater-et-s-inscrire/etape-2-inscription-administrative/reinscription-a-l-universite-grenoble-alpes-600403.kjsp",
-      "action_detail": "Ouvre ton espace d'inscription, vérifie le paiement et que chaque pièce justificative est validée."
+      "action_detail": "Ouvre ton espace d'inscription, vérifie le paiement et que chaque pièce justificative est validée.",
+      "origine": "universite"
     },
     {
       "id": "DL-014",
@@ -2763,7 +2877,8 @@
       "date_fin": "2026-09-15",
       "urgence_indicative": "🟠 action recommandée",
       "lien_source_officielle": "https://cvec.etudiant.gouv.fr/",
-      "action_detail": "Télécharge ton attestation CVEC 2026-2027 et conserve son numéro."
+      "action_detail": "Télécharge ton attestation CVEC 2026-2027 et conserve son numéro.",
+      "origine": "national"
     },
     {
       "id": "DL-015",
@@ -2775,7 +2890,8 @@
       "date_fin": "2026-09-30",
       "urgence_indicative": "🟠 action recommandée",
       "lien_source_officielle": "https://www.reso-m.fr/779-nouveaux-tarifs-rentree-2026.htm",
-      "action_detail": "Compare ton tarif avec le tarif 18-24 ans en études et la tarification solidaire."
+      "action_detail": "Compare ton tarif avec le tarif 18-24 ans en études et la tarification solidaire.",
+      "origine": "local"
     },
     {
       "id": "DL-016",
@@ -2787,7 +2903,8 @@
       "date_fin": "2026-10-01",
       "urgence_indicative": "🟢 selon situation",
       "lien_source_officielle": "https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/logement",
-      "action_detail": "Vérifie ton dossier CAF, ton adresse et ton loyer ; simule l'aide au logement si ta situation a changé."
+      "action_detail": "Vérifie ton dossier CAF, ton adresse et ton loyer ; simule l'aide au logement si ta situation a changé.",
+      "origine": "national"
     },
     {
       "id": "DL-101",
@@ -2797,7 +2914,8 @@
       "ville_ou_perimetre": "France entière",
       "date_debut": "2026-07-01",
       "date_fin": "2026-09-30",
-      "urgence_indicative": "🟠 rentrée"
+      "urgence_indicative": "🟠 rentrée",
+      "origine": "national"
     },
     {
       "id": "DL-102",
@@ -2809,7 +2927,8 @@
       "date_fin": "2026-09-30",
       "urgence_indicative": "🟠 rentrée",
       "lien_source_officielle": "https://www.izly.fr/",
-      "action_detail": "Active ton compte Izly avant ton premier repas universitaire."
+      "action_detail": "Active ton compte Izly avant ton premier repas universitaire.",
+      "origine": "local"
     },
     {
       "id": "DL-103",
@@ -2821,7 +2940,8 @@
       "date_fin": "2026-09-30",
       "urgence_indicative": "🟠 rentrée",
       "lien_source_officielle": "https://www.reso-m.fr/779-nouveaux-tarifs-rentree-2026.htm",
-      "action_detail": "Mets à jour ton statut étudiant dans M réso pour bénéficier du tarif adapté."
+      "action_detail": "Mets à jour ton statut étudiant dans M réso pour bénéficier du tarif adapté.",
+      "origine": "local"
     },
     {
       "id": "DL-104",
@@ -2831,7 +2951,8 @@
       "ville_ou_perimetre": "Grenoble",
       "date_debut": "2026-07-01",
       "date_fin": "2026-08-27",
-      "urgence_indicative": "🔴 proche"
+      "urgence_indicative": "🔴 proche",
+      "origine": "local"
     },
     {
       "id": "DL-105",
@@ -2873,7 +2994,8 @@
         "EST-GR-ESISAR"
       ],
       "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/formation/admissions-et-inscriptions/candidater-et-s-inscrire/etape-2-inscription-administrative/premiere-inscription-a-l-universite-grenoble-alpes-600426.kjsp",
-      "action_detail": "Vérifie ta CVEC, finalise ton inscription administrative, puis contrôle le dépôt et la validation de tes pièces justificatives."
+      "action_detail": "Vérifie ta CVEC, finalise ton inscription administrative, puis contrôle le dépôt et la validation de tes pièces justificatives.",
+      "origine": "universite"
     },
     {
       "id": "DL-106",
@@ -2918,7 +3040,8 @@
         "EST-GR-ESISAR"
       ],
       "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/formation/admissions-et-inscriptions/candidater-et-s-inscrire/etape-2-inscription-administrative/reinscription-a-l-universite-grenoble-alpes-600403.kjsp",
-      "action_detail": "Finalise ta réinscription UGA pendant la seconde campagne et vérifie CVEC, paiement et pièces justificatives."
+      "action_detail": "Finalise ta réinscription UGA pendant la seconde campagne et vérifie CVEC, paiement et pièces justificatives.",
+      "origine": "universite"
     },
     {
       "id": "DL-107",
@@ -2931,7 +3054,8 @@
       "urgence_indicative": "🔴 proche",
       "formations_requises": [
         "GR-0067"
-      ]
+      ],
+      "origine": "universite"
     },
     {
       "id": "DL-108",
@@ -2946,7 +3070,8 @@
         "GR-0068"
       ],
       "lien_source_officielle": "https://medecine.univ-grenoble-alpes.fr/presentation/inscriptions-reinscriptions/inscriptions-2e-annee-medecine-877692.kjsp",
-      "action_detail": "Consulte la page officielle DFGSM2 pour confirmer l'horaire et le lieu de rentrée puis ajoute la date à ton agenda."
+      "action_detail": "Consulte la page officielle DFGSM2 pour confirmer l'horaire et le lieu de rentrée puis ajoute la date à ton agenda.",
+      "origine": "universite"
     },
     {
       "id": "DL-109",
@@ -2961,7 +3086,8 @@
         "GR-0068"
       ],
       "lien_source_officielle": "https://medecine.univ-grenoble-alpes.fr/presentation/inscriptions-reinscriptions/inscriptions-2e-annee-medecine-877692.kjsp",
-      "action_detail": "Contrôle ton inscription DFGSM2, ton attestation CVEC et les pièces demandées. La page officielle indique une inscription administrative du 3 au 9 juillet 2026."
+      "action_detail": "Contrôle ton inscription DFGSM2, ton attestation CVEC et les pièces demandées. La page officielle indique une inscription administrative du 3 au 9 juillet 2026.",
+      "origine": "universite"
     },
     {
       "id": "DL-110",
@@ -2974,7 +3100,8 @@
       "urgence_indicative": "🔴 proche",
       "formations_requises": [
         "GR-0069"
-      ]
+      ],
+      "origine": "universite"
     },
     {
       "id": "DL-111",
@@ -2992,7 +3119,8 @@
         ""
       ],
       "lien_source_officielle": "https://trouverunlogement.lescrous.fr/",
-      "action_detail": "Consulte régulièrement les logements restants et prépare tes justificatifs."
+      "action_detail": "Consulte régulièrement les logements restants et prépare tes justificatifs.",
+      "origine": "local"
     },
     {
       "id": "DL-112",
@@ -3013,7 +3141,8 @@
         "EST-124"
       ],
       "lien_source_officielle": "https://suaps.univ-grenoble-alpes.fr/fr/s-inscrire-a-une-activite-notee-2eme-semestre-417475.kjsp?RH=7769972214881086",
-      "action_detail": "Consulte les activités, candidate dans Mon compte SUAPS du 3 au 9 septembre, puis utilise le forum de seconde chance du 10 septembre si besoin."
+      "action_detail": "Consulte les activités, candidate dans Mon compte SUAPS du 3 au 9 septembre, puis utilise le forum de seconde chance du 10 septembre si besoin.",
+      "origine": "universite"
     },
     {
       "id": "DDL-029",
@@ -3026,7 +3155,8 @@
       "urgence": "à venir",
       "lien_source": "https://www.emblemgrenoble.com/home",
       "statut_verification": "🟢 vérifié — source éditeur",
-      "date_derniere_verif": "2026-08-22"
+      "date_derniere_verif": "2026-08-22",
+      "origine": "local"
     },
     {
       "id": "DL-V4-UGA-S1",
@@ -3065,7 +3195,8 @@
         "EST-GR-PAGORA",
         "EST-GR-ESISAR"
       ],
-      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/"
+      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/",
+      "origine": "universite"
     },
     {
       "id": "DL-V4-UGA-EX1",
@@ -3104,7 +3235,8 @@
         "EST-GR-PAGORA",
         "EST-GR-ESISAR"
       ],
-      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/"
+      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/",
+      "origine": "universite"
     },
     {
       "id": "DL-V4-UGA-S2",
@@ -3143,7 +3275,8 @@
         "EST-GR-PAGORA",
         "EST-GR-ESISAR"
       ],
-      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/"
+      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/",
+      "origine": "universite"
     },
     {
       "id": "DL-V4-UGA-EX2",
@@ -3182,7 +3315,8 @@
         "EST-GR-PAGORA",
         "EST-GR-ESISAR"
       ],
-      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/"
+      "lien_source_officielle": "https://www.univ-grenoble-alpes.fr/le-calendrier-universitaire/",
+      "origine": "universite"
     }
   ],
   "establishments": [
@@ -5791,7 +5925,7 @@
     }
   ],
   "audit": {
-    "version": "4.0",
+    "version": "4.1",
     "ville_pilote": "Grenoble",
     "date": "2026-08-22",
     "status": "profils_reels_corriges",
@@ -5801,6 +5935,38 @@
       "Deadlines médecine reliées aux bons cursus",
       "Planning établissement/formation rendu plus strict"
     ],
-    "formation_model": "Ville → établissement/composante → cursus précis → niveau synchronisé"
+    "formation_model": "Ville → établissement/composante → cursus précis → niveau synchronisé",
+    "v4_1": [
+      "Taxonomie visuelle National / Université / Local",
+      "Score de complétion du profil",
+      "Champs manquants qui améliorent le matching",
+      "Explication des critères de recommandation",
+      "Niveau de confiance explicite"
+    ]
+  },
+  "ui_taxonomy": {
+    "origines": {
+      "national": {
+        "label": "National",
+        "color": "blue",
+        "description": "État, CAF, CROUS et dispositifs nationaux"
+      },
+      "universite": {
+        "label": "Université",
+        "color": "purple",
+        "description": "Établissement, formation et vie de campus"
+      },
+      "local": {
+        "label": "Local",
+        "color": "orange",
+        "description": "Ville, métropole et bons plans grenoblois"
+      }
+    },
+    "confidence": [
+      "Éligible",
+      "Probablement éligible",
+      "À vérifier",
+      "Non compatible"
+    ]
   }
 }

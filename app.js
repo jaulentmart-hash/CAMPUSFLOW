@@ -13,7 +13,7 @@ function saveCompleted(){ localStorage.setItem('campusflow_completed', JSON.stri
 
 const FALLBACK_CITIES = ['Paris','Lyon','Lille','Bordeaux','Toulouse','Grenoble'];
 
-fetch('data.json?v=4.0')
+fetch('data.json?v=4.1')
   .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then(json=>{ DATA={...DATA,...json}; init(); })
   .catch(err=>{
@@ -23,7 +23,7 @@ fetch('data.json?v=4.0')
     $('#opp-list').innerHTML='<div class="empty-state">La base distante n’a pas pu être chargée. Réessaie en actualisant la page.</div>';
   });
 
-function init(){ renderProfileForm(); renderIdCard(); renderFilters(); renderOpportunities(); renderDeadlines(); renderHome(); renderCalendarSummary(); renderFocus(); bindNav(); bindSheet(); bindNotifications(); const search=$('#opp-search'); if(search) search.addEventListener('input',renderOpportunities); }
+function init(){ renderProfileForm(); renderIdCard(); renderFilters(); renderOpportunities(); renderDeadlines(); renderHome(); renderCalendarSummary(); renderFocus(); renderSmartProfile(); bindNav(); bindSheet(); bindNotifications(); const search=$('#opp-search'); if(search) search.addEventListener('input',renderOpportunities); }
 
 function isNational(o){ return (o.perimetre||'').toLowerCase()==='national'; }
 function opportunityMatchesProfile(o){
@@ -133,6 +133,57 @@ function renderIdCard(){
   const pills=[]; if(PROFILE.niveau)pills.push(PROFILE.niveau); if(PROFILE.boursier==='oui')pills.push('Boursier·ère'); if(PROFILE.alternant==='oui')pills.push('Alternant·e'); if(PROFILE.age)pills.push(`${PROFILE.age} ans`);
   $('#id-pills').innerHTML=pills.length?pills.map(x=>`<span class="pill">${escapeHtml(x)}</span>`).join(''):'<span class="pill">Profil à compléter</span>';
 }
+
+function originMeta(item){
+ const key=item.origine||'national';
+ const map={national:{label:'National',cls:'origin-national'},universite:{label:'Université',cls:'origin-universite'},local:{label:'Local',cls:'origin-local'}};
+ return map[key]||map.national;
+}
+function profileCompletion(){
+ const fields=[
+  ['ville','Ville d’études'],['age','Âge'],['etablissement','Établissement'],['formation','Formation'],
+  ['niveau','Année / niveau'],['boursier','Statut boursier'],['logement','Logement'],
+  ['transport','Transport'],['qf','Quotient familial'],['villeResidence','Ville de résidence']
+ ];
+ const done=fields.filter(([k])=>PROFILE[k]!==undefined&&PROFILE[k]!==null&&PROFILE[k]!=='').length;
+ return {pct:Math.round(done/fields.length*100),missing:fields.filter(([k])=>PROFILE[k]===undefined||PROFILE[k]===null||PROFILE[k]==='')};
+}
+function countPotentialUnlock(field){
+ const aliases={qf:['qf_max','qf_min'],villeResidence:['ville_residence'],etablissement:['etablissement'],formation:['formation'],logement:['type_logement'],boursier:['boursier'],age:['age_min','age_max']};
+ const keys=aliases[field]||[];
+ return DATA.opportunities.filter(o=>keys.some(k=>o[k]!==undefined&&o[k]!==null&&o[k]!=='')).length;
+}
+function renderSmartProfile(){
+ const card=$('#smart-profile-card');if(!card)return;
+ const c=profileCompletion();$('#profile-completion').textContent=`${c.pct} %`;$('#completion-bar').style.width=`${c.pct}%`;
+ const ranked=c.missing.map(([key,label])=>({key,label,n:countPotentialUnlock(key)})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n).slice(0,3);
+ $('#profile-unlocks').innerHTML=ranked.length?ranked.map(x=>`<button class="unlock-item" data-nav="profil"><span>+</span><div><strong>Renseigne ${escapeHtml(x.label.toLowerCase())}</strong><small>${x.n} dispositif${x.n>1?'s':''} pourront être vérifiés plus précisément</small></div></button>`).join(''):`<div class="profile-complete-msg">Ton profil contient déjà les principaux critères de matching.</div>`;
+ $('#profile-unlocks').querySelectorAll('[data-nav]').forEach(b=>b.onclick=()=>navigateTo('profil'));
+}
+function recommendationReasons(o){
+ const r=[];
+ if(PROFILE.ville&&o.ville&&o.ville===PROFILE.ville)r.push(`${PROFILE.ville} ✓`);
+ if(PROFILE.age&&o.age_max&&Number(PROFILE.age)<=Number(o.age_max))r.push(`Âge compatible ✓`);
+ if(PROFILE.age&&o.age_min&&Number(PROFILE.age)>=Number(o.age_min))r.push(`Âge minimum ✓`);
+ if(PROFILE.qf&&o.qf_max&&Number(PROFILE.qf)<=Number(o.qf_max))r.push(`QF compatible ✓`);
+ if(PROFILE.boursier&&o.boursier===true)r.push(`Statut boursier ✓`);
+ if(PROFILE.etablissement&&o.etablissement===PROFILE.etablissement)r.push(`Ton établissement ✓`);
+ if(PROFILE.formation&&o.formation===PROFILE.formation)r.push(`Ta formation ✓`);
+ if(!r.length)r.push(o.origine==='national'?'Dispositif national':'Correspond à ton profil actuel');
+ return r.slice(0,4);
+}
+function confidenceLabel(o){
+ const req=o.required_profile_fields||[];
+ const missing=req.filter(k=>{
+  const map={quotient_familial:'qf',ville_residence:'villeResidence',type_logement:'logement'};
+  const pk=map[k]||k;return PROFILE[pk]===undefined||PROFILE[pk]===null||PROFILE[pk]==='';
+ });
+ if(missing.length)return {label:'À vérifier',cls:'confidence-check'};
+ const reasons=recommendationReasons(o);
+ if(reasons.length>=3)return {label:'Éligible selon ton profil',cls:'confidence-high'};
+ return {label:'Probablement éligible',cls:'confidence-medium'};
+}
+
 function renderHome(){
   const compatible=DATA.opportunities.filter(opportunityIsCompatible);
   const s=financialSummary(compatible);
@@ -196,15 +247,15 @@ function displayAmount(o){
 }
 function opportunityCard(o){
   const card=document.createElement('div'); card.className='card'; const comp=opportunityIsCompatible(o); const conf=confidence(o);
-  card.innerHTML=`<div class="card-top"><div class="card-title">${escapeHtml(o.nom||'')}</div><div class="card-amount">${escapeHtml(displayAmount(o))}</div></div>
+  card.innerHTML=`${(()=>{const om=originMeta(o);return `<div class="origin-chip ${om.cls}">${om.label}</div>`})()}<div class="card-top"><div class="card-title">${escapeHtml(o.nom||'')}</div><div class="card-amount">${escapeHtml(displayAmount(o))}</div></div>
   <div class="card-meta"><span class="tag">${escapeHtml(o.categorie||'')}</span><span class="tag">${escapeHtml(o.ville||'National')}</span><span class="tag ${comp?'status-green':'status-orange'}">${comp?conf:'Hors profil actuel'}</span></div>
-  <div class="card-desc">${escapeHtml((o.description_courte||'').slice(0,130))}${(o.description_courte||'').length>130?'…':''}</div>`;
+  <div class="card-desc">${escapeHtml((o.description_courte||'').slice(0,130))}${(o.description_courte||'').length>130?'…':''}</div><div class="recommendation-proof">${(()=>{const c=confidenceLabel(o);return `<span class="confidence ${c.cls}">${c.label}</span>`})()}<div class="reason-mini">${recommendationReasons(o).map(r=>`<span>${escapeHtml(r)}</span>`).join('')}</div></div>`;
   card.onclick=()=>openOpportunitySheet(o); return card;
 }
 function openOpportunitySheet(o){
   const official=(o.statut_verification||'').includes('🟢')?'Source vérifiée':'À revérifier';
   const reasons=matchingReasons(o);
-  $('#sheet-content').innerHTML=`<h2>${escapeHtml(o.nom||'')}</h2><div class="card-amount">${escapeHtml(displayAmount(o))}</div>
+  $('#sheet-content').innerHTML=`<h2>${escapeHtml(o.nom||'')}</h2><div class="sheet-origin-row"><span class="origin-chip ${originMeta(o).cls}">${originMeta(o).label}</span><span class="confidence ${confidenceLabel(o).cls}">${confidenceLabel(o).label}</span></div><div class="why-box"><strong>Pourquoi CampusFlow te montre ça</strong><div>${recommendationReasons(o).map(r=>`<span>${escapeHtml(r)}</span>`).join('')}</div></div><div class="card-amount">${escapeHtml(displayAmount(o))}</div>
   <p class="sheet-copy">${escapeHtml(o.description_courte||'')}</p>
   <div class="eligibility-note">${opportunityIsCompatible(o)?'Ton profil semble compatible — vérifie les conditions officielles.':'Cette opportunité ne correspond pas complètement aux informations de ton profil.'}${reasons.length?`<div class="reason-list">${reasons.map(r=>`<span>${escapeHtml(r)}</span>`).join('')}</div>`:''}</div>
   <div class="sheet-row"><span class="k">Type</span><span class="v">${labelFinancialClass(o)}</span></div>
@@ -233,7 +284,7 @@ function relevantDeadlines(){ const now=new Date(); return DATA.deadlines.filter
 function urgencyBucket(d){ const dt=parseDeadlineDate(d); if(!dt)return'green'; const days=(dt-new Date())/86400000; if(days<=14)return'red'; if(days<=60)return'orange'; return'green'; }
 function deadlineRow(d){
  const row=document.createElement('div'); row.className='deadline-row'+(COMPLETED.includes(d.id)?' completed':'');
- row.innerHTML=`<button class="task-check" aria-label="Terminer">${COMPLETED.includes(d.id)?'✓':''}</button><div class="urgency-dot ${urgencyBucket(d)}"></div><div class="deadline-copy"><div class="deadline-title">${escapeHtml(d.titre||'')}</div><div class="deadline-date">${escapeHtml(formatDateRange(d))} · ${escapeHtml(d.ville_ou_perimetre||'')}</div><div class="deadline-action">Voir quoi faire →</div></div>`;
+ row.innerHTML=`<button class="task-check" aria-label="Terminer">${COMPLETED.includes(d.id)?'✓':''}</button><div class="urgency-dot ${urgencyBucket(d)}"></div><div class="deadline-copy"><div class="deadline-title-line"><span class="origin-chip ${originMeta(d).cls}">${originMeta(d).label}</span><div class="deadline-title">${escapeHtml(d.titre||'')}</div></div><div class="deadline-date">${escapeHtml(formatDateRange(d))} · ${escapeHtml(d.ville_ou_perimetre||'')}</div><div class="deadline-action">Voir quoi faire →</div></div>`;
  row.querySelector('.task-check').onclick=(e)=>{e.stopPropagation();toggleCompleted(d.id);}; row.onclick=()=>openDeadlineSheet(d); return row;
 }
 function formatDateFR(raw){if(!raw)return'Date à confirmer';const dt=new Date(raw+'T12:00:00');if(isNaN(dt))return raw;return dt.toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'});}
@@ -258,7 +309,7 @@ function renderProfileForm(){
  $('#f-ville').onchange=()=>{ PROFILE.ville=$('#f-ville').value; updateEstablishments(); }; $('#f-niveau').onchange=()=>{ PROFILE.niveau=$('#f-niveau').value; };
  $('#f-etablissement').onchange=()=>{ PROFILE.etablissement=$('#f-etablissement').value; PROFILE.formation=''; updateFormations(); }; $('#f-formation').onchange=()=>{ PROFILE.formation=$('#f-formation').value; const f=DATA.formations.find(x=>x.id===PROFILE.formation); if(f?.niveau){ PROFILE.niveau=f.niveau; $('#f-niveau').value=f.niveau; } };
  $$('.toggle-btn').forEach(btn=>{const field=btn.dataset.field,value=btn.dataset.value;btn.classList.toggle('active',PROFILE[field]===value);btn.onclick=()=>{PROFILE[field]=value;$$(`.toggle-btn[data-field="${field}"]`).forEach(b=>b.classList.toggle('active',b===btn));};});
- $('#save-profile').onclick=()=>{PROFILE.ville=$('#f-ville').value;PROFILE.villeResidence=$('#f-ville-residence').value;PROFILE.age=$('#f-age').value;PROFILE.niveau=$('#f-niveau').value;PROFILE.logement=$('#f-logement').value;PROFILE.transport=$('#f-transport').value;PROFILE.qf=$('#f-qf').value;PROFILE.etablissement=$('#f-etablissement').value;PROFILE.formation=$('#f-formation').value;saveProfile();renderIdCard();renderHome();renderDeadlines();renderFocus();navigateTo('accueil');};
+ $('#save-profile').onclick=()=>{PROFILE.ville=$('#f-ville').value;PROFILE.villeResidence=$('#f-ville-residence').value;PROFILE.age=$('#f-age').value;PROFILE.niveau=$('#f-niveau').value;PROFILE.logement=$('#f-logement').value;PROFILE.transport=$('#f-transport').value;PROFILE.qf=$('#f-qf').value;PROFILE.etablissement=$('#f-etablissement').value;PROFILE.formation=$('#f-formation').value;saveProfile();renderIdCard();renderHome();renderDeadlines();renderFocus();renderSmartProfile();navigateTo('accueil');};
 }
 function updateEstablishments(){ const list=DATA.establishments.filter(e=>!PROFILE.ville||e.ville===PROFILE.ville); $('#f-etablissement').innerHTML='<option value="">Choisir (optionnel)</option>'+list.map(e=>`<option value="${e.id}">${escapeHtml(e.nom)}</option>`).join(''); if(list.some(e=>e.id===PROFILE.etablissement))$('#f-etablissement').value=PROFILE.etablissement; else PROFILE.etablissement=''; updateFormations(); }
 function updateFormations(){ let list=DATA.formations.filter(f=>f.etablissement_id===PROFILE.etablissement); list.sort((a,b)=>(a.nom||'').localeCompare(b.nom||'','fr')); $('#f-formation').innerHTML='<option value="">Choisir une formation</option>'+list.map(f=>`<option value="${f.id}">${escapeHtml(f.nom)}</option>`).join(''); if(list.some(f=>f.id===PROFILE.formation)){ $('#f-formation').value=PROFILE.formation; const selected=list.find(f=>f.id===PROFILE.formation); if(selected?.niveau){ PROFILE.niveau=selected.niveau; $('#f-niveau').value=selected.niveau; } } else PROFILE.formation=''; }
