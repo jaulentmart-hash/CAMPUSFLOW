@@ -1539,6 +1539,72 @@
       "statut_verification": "🟢 vérifié",
       "date_derniere_verif": "2026-08-11",
       "date_limite_2026_2027": null
+    },
+    {
+      "id": "OPP-103",
+      "nom": "Abonnement M réso 18-24 ans en études",
+      "description_courte": "Abonnement de transports en commun à tarif étudiant sur le réseau M réso (Métropole grenobloise, Grésivaudan et Voironnais).",
+      "categorie": "transport",
+      "type": "tarif réduit",
+      "montant_min_eur": 21.1,
+      "montant_max_eur": 21.1,
+      "frequence": "mensuel",
+      "perimetre": "local",
+      "ville": "Grenoble",
+      "boursier_requis": "non",
+      "alternant_requis": "non",
+      "age_max": 24,
+      "autres_criteres": "18-24 ans inclus et profil en études à jour ; nouveaux tarifs à partir du 1er septembre 2026",
+      "lien_source_officielle": "https://www.reso-m.fr/779-nouveaux-tarifs-rentree-2026.htm",
+      "statut_verification": "🟢 vérifié",
+      "date_derniere_verif": "2026-08-22",
+      "date_limite_2026_2027": null,
+      "financial_class": "cost",
+      "value_mode": "price"
+    },
+    {
+      "id": "OPP-104",
+      "nom": "Tarification solidaire M réso",
+      "description_courte": "Abonnement M réso ajusté au niveau de ressources selon le quotient familial CAF.",
+      "categorie": "transport",
+      "type": "tarif solidaire",
+      "montant_min_eur": 0,
+      "montant_max_eur": 0,
+      "frequence": "mensuel",
+      "perimetre": "local",
+      "ville": "Grenoble",
+      "boursier_requis": "non",
+      "alternant_requis": "non",
+      "age_max": null,
+      "autres_criteres": "quotient familial CAF inférieur ou égal à 900 € ou autres situations prévues par le dispositif",
+      "lien_source_officielle": "https://www.reso-m.fr/68-tarification-solidaire.htm",
+      "statut_verification": "🟢 vérifié",
+      "date_derniere_verif": "2026-08-22",
+      "date_limite_2026_2027": null,
+      "financial_class": "saving",
+      "value_mode": "variable"
+    },
+    {
+      "id": "OPP-105",
+      "nom": "Piscines municipales Grenoble — tarif étudiant / 18-25 ans",
+      "description_courte": "Tarif réduit dans les piscines municipales de Grenoble pour les étudiants et les 18-25 ans.",
+      "categorie": "sport",
+      "type": "tarif réduit",
+      "montant_min_eur": 3,
+      "montant_max_eur": 4.5,
+      "frequence": "par entrée",
+      "perimetre": "local",
+      "ville": "Grenoble",
+      "boursier_requis": "non",
+      "alternant_requis": "non",
+      "age_max": 25,
+      "autres_criteres": "étudiant ou 18-25 ans ; 3 € l’entrée pour les Grenoblois, 4,50 € pour les non-Grenoblois",
+      "lien_source_officielle": "https://www.grenoble.fr/demarche/495/246-se-rendre-dans-une-piscine-municipale.htm",
+      "statut_verification": "🟢 vérifié",
+      "date_derniere_verif": "2026-08-22",
+      "date_limite_2026_2027": null,
+      "financial_class": "cost",
+      "value_mode": "price"
     }
   ],
   "deadlines": [
@@ -1651,6 +1717,16 @@
       "date_debut": "2026-06-11",
       "date_fin": "2026-09-10",
       "urgence_indicative": "🟢 informatif (référence)"
+    },
+    {
+      "id": "DL-012",
+      "titre": "Nouveaux tarifs M réso — rentrée 2026",
+      "description": "Application de la nouvelle grille tarifaire M réso dans la métropole grenobloise et le Grésivaudan.",
+      "niveau": "local",
+      "ville_ou_perimetre": "Grenoble",
+      "date_debut": "2026-09-01",
+      "date_fin": null,
+      "urgence_indicative": "🟢 informatif"
     }
   ],
   "establishments": [
@@ -2187,6 +2263,36 @@
       "nom": "IUT de Blagnac (Université Toulouse - Jean Jaurès)",
       "ville": "Toulouse",
       "type": "IUT"
+    },
+    {
+      "id": "EST-117",
+      "nom": "Université Grenoble Alpes (UGA)",
+      "ville": "Grenoble",
+      "type": "université"
+    },
+    {
+      "id": "EST-118",
+      "nom": "Grenoble INP - UGA",
+      "ville": "Grenoble",
+      "type": "école d'ingénieurs"
+    },
+    {
+      "id": "EST-119",
+      "nom": "Sciences Po Grenoble - UGA",
+      "ville": "Grenoble",
+      "type": "grande école"
+    },
+    {
+      "id": "EST-120",
+      "nom": "IUT1 Grenoble - UGA",
+      "ville": "Grenoble",
+      "type": "IUT"
+    },
+    {
+      "id": "EST-121",
+      "nom": "Lycée Champollion (CPGE)",
+      "ville": "Grenoble",
+      "type": "prépa"
     }
   ],
   "formations": [
@@ -2513,6 +2619,36 @@
       "etablissement_id": "EST-115",
       "nom": "BUT Techniques de Commercialisation (TC)",
       "niveau": "BUT 1re année"
+    },
+    {
+      "id": "FOR-055",
+      "etablissement_id": "EST-117",
+      "nom": "Licence Sciences pour la santé",
+      "niveau": "L1"
+    },
+    {
+      "id": "FOR-056",
+      "etablissement_id": "EST-117",
+      "nom": "PASS / accès santé",
+      "niveau": "1re année"
+    },
+    {
+      "id": "FOR-057",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Informatique",
+      "niveau": "BUT 1re année"
+    },
+    {
+      "id": "FOR-058",
+      "etablissement_id": "EST-120",
+      "nom": "BUT Génie Électrique et Informatique Industrielle (GEII)",
+      "niveau": "BUT 1re année"
+    },
+    {
+      "id": "FOR-059",
+      "etablissement_id": "EST-121",
+      "nom": "CPGE MPSI",
+      "niveau": "1re année"
     }
   ],
   "sources": [
@@ -2584,6 +2720,27 @@
       "nom_organisme": "Toulouse Métropole",
       "url": "https://metropole.toulouse.fr",
       "date_verification": "2026-08-11",
+      "fiabilite": "officielle"
+    },
+    {
+      "id": "SRC-011",
+      "nom_organisme": "M réso Grenoble",
+      "url": "https://www.reso-m.fr",
+      "date_verification": "2026-08-22",
+      "fiabilite": "officielle"
+    },
+    {
+      "id": "SRC-012",
+      "nom_organisme": "Ville de Grenoble",
+      "url": "https://www.grenoble.fr",
+      "date_verification": "2026-08-22",
+      "fiabilite": "officielle"
+    },
+    {
+      "id": "SRC-013",
+      "nom_organisme": "Université Grenoble Alpes — Portail étudiant",
+      "url": "https://etudiant.univ-grenoble-alpes.fr",
+      "date_verification": "2026-08-22",
       "fiabilite": "officielle"
     }
   ],

@@ -368,3 +368,11 @@ a{color:inherit;}
 @media (prefers-reduced-motion: reduce){
   .page.active{ animation:none; }
 }
+
+/* ===== CampusFlow V2 additions ===== */
+.v2-badge{font:600 10px 'IBM Plex Mono',monospace;color:var(--mint);border:1px solid rgba(95,209,160,.35);padding:3px 6px;border-radius:999px;background:rgba(95,209,160,.08)}
+.finance-grid{display:grid;grid-template-columns:1fr;gap:8px;margin-top:16px}.finance-chip{padding:10px 12px;border:1px solid var(--stroke);border-radius:12px;background:rgba(255,255,255,.025);font:500 12px 'IBM Plex Mono',monospace;color:var(--text)}
+.disclaimer,.privacy-note{margin-top:14px;color:var(--muted);font-size:11px;line-height:1.5}.page-head{padding-top:20px}.page-head p{color:var(--muted);font-size:13px;line-height:1.5;margin:7px 0 0}.spaced{margin-top:20px}.compact{padding:18px 12px}
+.profile-group{background:rgba(25,29,58,.55);border:1px solid var(--stroke);border-radius:16px;padding:16px;margin-bottom:14px}.profile-group h3{font-size:15px;margin-bottom:16px;color:var(--amber)}.two-col{display:grid;grid-template-columns:1fr 1.4fr;gap:10px}.two-col label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em}.two-col input,.two-col select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--stroke);background:var(--surface);color:var(--text);font-size:15px}
+.task-check{width:25px;height:25px;flex:none;border-radius:8px;border:1px solid var(--stroke);background:var(--surface-2);color:var(--mint);font-weight:700;cursor:pointer}.deadline-copy{min-width:0}.deadline-row.completed{opacity:.52}.deadline-row.completed .deadline-title{text-decoration:line-through}.eligibility-note{margin:14px 0;padding:12px;border-radius:12px;background:rgba(95,209,160,.08);border:1px solid rgba(95,209,160,.2);font-size:12px;line-height:1.45;color:var(--mint)}.sheet-copy{color:var(--muted);font-size:14px;margin-top:14px;line-height:1.6}
+@media(min-width:700px){body{max-width:760px;margin:0 auto;border-left:1px solid var(--stroke);border-right:1px solid var(--stroke)}.bottom-nav{max-width:760px;margin:0 auto}.finance-grid{grid-template-columns:1fr 1fr}}

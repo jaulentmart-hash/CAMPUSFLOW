@@ -1,0 +1,92 @@
+# Prompt à coller dans Glide (générateur d'app par IA)
+
+Copie-colle tout le texte ci-dessous dans Glide au moment de créer ton app (après avoir connecté ton Google Sheets "CampusFlow_Base_Donnees.xlsx").
+
+---
+
+## Description de l'app
+
+CampusFlow est une application mobile et web destinée aux étudiants français. Elle centralise les aides financières, avantages, démarches administratives et échéances qui peuvent concerner un étudiant, en fonction de sa situation personnelle et de sa ville.
+
+**Promesse du produit** : « Donne-nous ta situation et ta ville. CampusFlow te montre ce qui peut réellement te concerner, combien tu pourrais économiser, et ce que tu dois faire. »
+
+Ce n'est pas un simple annuaire d'aides ni un chatbot générique. La valeur du produit repose sur : une base de données vérifiée + la personnalisation par profil + la localisation + l'estimation des économies potentielles + un calendrier de démarches.
+
+## Profil utilisateur (à collecter progressivement, pas tout d'un coup)
+
+À l'inscription puis au fil de l'usage, l'app doit permettre de renseigner :
+- âge
+- ville d'études et ville de résidence (si différentes)
+- établissement (université, prépa, BTS, IUT...)
+- formation suivie
+- niveau d'étude
+- statut boursier ou non
+- statut alternant ou non
+- type de logement
+- mode de transport utilisé
+- possession du permis / d'une voiture
+- situation financière (uniquement si nécessaire à une aide précise)
+
+Le questionnaire doit être dynamique et progressif : ne pas demander toutes les informations d'un coup, uniquement ce qui est utile pour affiner les résultats affichés.
+
+## Moteur de correspondance (matching)
+
+La logique de mise en relation entre le profil et les opportunités suit une hiérarchie :
+
+France → région → ville → établissement → formation → situation personnelle → opportunités pertinentes affichées
+
+Règle de formulation stricte à respecter dans tous les textes de l'app : ne jamais afficher « Tu es éligible ». Toujours utiliser une formulation prudente du type « Tu pourrais être éligible » ou « Ton profil semble compatible — vérifie les conditions officielles ». Chaque opportunité affichée doit inclure un lien vers sa source officielle.
+
+## Fonctionnalité « Combien puis-je économiser ? »
+
+Écran ou widget qui additionne les montants potentiels des opportunités identifiées comme compatibles avec le profil de l'utilisateur, et les affiche sous forme de total (ex : « Jusqu'à 386 € d'avantages potentiels identifiés — 14 opportunités détectées »). Chaque opportunité listée doit afficher : son nom, son montant estimé, et un statut visuel (🟢 disponible / 🟠 à vérifier). Le montant total doit toujours être présenté comme potentiel, jamais comme garanti.
+
+## Planning personnalisé
+
+Écran qui transforme les deadlines et démarches pertinentes pour l'utilisateur en tâches actionnables, classées par urgence :
+- 🔴 Aujourd'hui
+- 🟠 Cette semaine
+- 🟢 Dans 1 mois
+
+L'utilisateur doit pouvoir marquer une tâche comme terminée, suivre l'avancement d'une démarche, voir ses deadlines à venir, et idéalement recevoir des rappels.
+
+## Structure des données (déjà construite dans le Google Sheets connecté)
+
+L'app doit lire les onglets suivants du classeur connecté :
+- **OPPORTUNITIES** : aides, réductions, services, avantages (nationaux et locaux), avec catégorie, montant, ville, critères d'éligibilité (boursier, alternant, âge max...), lien source, statut de vérification
+- **DEADLINES** : échéances nationales et locales (rentrées, DSE, Parcoursup, inscriptions), avec niveau, ville, dates
+- **ESTABLISHMENTS** : universités, CPGE, BTS, IUT par ville
+- **FORMATIONS** : formations rattachées à chaque établissement
+- **SOURCES** : organismes officiels et dates de vérification des données
+- **USERS** : géré automatiquement par le système de comptes Glide
+
+## Villes couvertes au lancement
+
+Paris, Lyon, Lille, Bordeaux, Toulouse (extension prévue à Grenoble ensuite).
+
+## Écrans principaux attendus
+
+1. Écran d'accueil / tableau de bord : résumé personnalisé (économies potentielles, prochaines deadlines urgentes)
+2. Écran de profil / questionnaire progressif
+3. Liste des opportunités, filtrable par catégorie (aide financière, logement, transport, culture, sport) et par ville, avec recherche
+4. Fiche détail d'une opportunité : description, montant, critères, statut, lien vers la source officielle
+5. Écran planning / démarches avec les échéances classées par urgence
+6. Écran « Combien puis-je économiser » avec le total et le détail
+7. Écran établissements / formations par ville, avec leurs deadlines
+8. Écran compte / paramètres, incluant la gestion de l'abonnement premium
+
+## Modèle économique (freemium)
+
+**Gratuit** : recherche basique, dispositifs généraux nationaux, sources officielles, aperçu des résultats.
+
+**Premium** (~1-2 €/mois) : matching complet personnalisé, données locales détaillées, établissements/formations complets, estimation des économies, planning personnalisé, suivi des deadlines, rappels.
+
+L'app doit prévoir un écran d'abonnement clair expliquant la différence entre les deux offres, avec un bouton d'upgrade.
+
+## Ton et style
+
+Sobre, clair, rassurant — jamais alarmiste ni promotionnel à outrance. L'app s'adresse à des étudiants qui peuvent être en difficulté financière : éviter tout ton culpabilisant, privilégier des messages qui responsabilisent sans stresser.
+
+---
+
+*Fin du prompt. Une fois l'app générée, tu pourras ajuster manuellement les écrans, les couleurs et les composants dans l'éditeur visuel de Glide.*

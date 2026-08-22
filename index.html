@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>CampusFlow — le tableau de bord de l'étudiant</title>
+<meta name="theme-color" content="#0F1224">
+<title>CampusFlow — ton copilote étudiant</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="topbar"><div class="brand"><span class="dot"></span> CampusFlow <span class="v2-badge">V2</span></div></div>
 
-<div class="topbar">
-  <div class="brand"><span class="dot"></span> CampusFlow</div>
-</div>
-
-<!-- ============ ACCUEIL ============ -->
 <div class="page active" id="page-accueil">
   <div class="id-card">
     <div class="id-label">Profil étudiant</div>
@@ -21,134 +18,74 @@
   </div>
 
   <div class="savings-hero">
-    <div class="label">Économies potentielles identifiées</div>
+    <div class="label">Aides financières potentielles identifiées</div>
     <div class="amount" id="savings-amount">0 €</div>
-    <div class="label" id="savings-count">0 opportunité détectée</div>
+    <div class="label" id="savings-count">0 aide compatible</div>
+    <div class="finance-grid">
+      <div class="finance-chip" id="benefit-count">0 avantage tarifaire</div>
+      <div class="finance-chip" id="financing-amount">Aucun financement spécifique détecté</div>
+    </div>
+    <div class="disclaimer">Estimation indicative : les montants ne sont jamais garantis. CampusFlow distingue désormais aides, avantages tarifaires et financements.</div>
   </div>
 
   <div class="section">
-    <div class="section-title">
-      <span>À faire bientôt</span>
-      <a href="#" class="see-all" data-nav="planning">voir tout →</a>
-    </div>
+    <div class="section-title"><span>À faire bientôt</span><a href="#" class="see-all" data-nav="planning">voir tout →</a></div>
     <div id="home-deadlines"></div>
   </div>
-
   <div class="section">
-    <div class="section-title">
-      <span>Opportunités pour toi</span>
-      <a href="#" class="see-all" data-nav="opportunites">voir tout →</a>
-    </div>
+    <div class="section-title"><span>Prioritaire pour toi</span><a href="#" class="see-all" data-nav="opportunites">voir tout →</a></div>
     <div id="home-opportunities"></div>
   </div>
-
-  <div class="upgrade-banner">
-    <b>CampusFlow Premium</b> — 1,99€/mois : matching complet, toutes les données locales, deadlines établissements, rappels. <a href="#" data-nav="profil" style="color:var(--amber);">En savoir plus →</a>
-  </div>
+  <div class="upgrade-banner"><b>CampusFlow Premium</b> — à valider après les premiers tests utilisateurs. La V2 reste entièrement exploitable sans paiement.</div>
 </div>
 
-<!-- ============ OPPORTUNITÉS ============ -->
 <div class="page" id="page-opportunites">
-  <div class="section" style="padding-top:20px;">
-    <h2>Opportunités</h2>
-  </div>
+  <div class="section page-head"><h2>Opportunités</h2><p>Les dispositifs sont classés par nature pour éviter les faux totaux.</p></div>
+  <div class="filter-row" id="filter-type"></div>
   <div class="filter-row" id="filter-ville"></div>
   <div class="filter-row" id="filter-categorie"></div>
   <div class="section" id="opp-list"></div>
 </div>
 
-<!-- ============ PLANNING ============ -->
 <div class="page" id="page-planning">
-  <div class="section" style="padding-top:20px;">
-    <h2>Planning</h2>
-    <p style="color:var(--muted); font-size:13px; margin-top:6px;">Tes démarches classées par urgence.</p>
-  </div>
+  <div class="section page-head"><h2>Planning personnalisé</h2><p>Seulement les échéances nationales et celles de ta ville. Coche une démarche quand elle est faite.</p></div>
   <div class="section">
-    <div class="section-title"><span>🔴 Urgent</span></div>
-    <div id="deadlines-red"></div>
-    <div class="section-title" style="margin-top:18px;"><span>🟠 Cette période</span></div>
-    <div id="deadlines-orange"></div>
-    <div class="section-title" style="margin-top:18px;"><span>🟢 Plus tard</span></div>
-    <div id="deadlines-green"></div>
+    <div class="section-title"><span>🔴 Dans les 14 jours</span></div><div id="deadlines-red"></div>
+    <div class="section-title spaced"><span>🟠 Dans les 60 jours</span></div><div id="deadlines-orange"></div>
+    <div class="section-title spaced"><span>🟢 Plus tard / informatif</span></div><div id="deadlines-green"></div>
   </div>
 </div>
 
-<!-- ============ PROFIL ============ -->
 <div class="page" id="page-profil">
-  <div class="section" style="padding-top:20px;">
-    <h2>Ton profil</h2>
-    <p style="color:var(--muted); font-size:13px; margin-top:6px; margin-bottom:20px;">Plus on en sait, plus le matching est précis.</p>
-
-    <div class="field">
-      <label>Ville d'études</label>
-      <select id="f-ville">
-        <option value="">Choisir une ville</option>
-        <option>Paris</option>
-        <option>Lyon</option>
-        <option>Lille</option>
-        <option>Bordeaux</option>
-        <option>Toulouse</option>
-      </select>
+  <div class="section page-head"><h2>Ton profil</h2><p>Les champs détaillés sont optionnels : ils servent à préparer un matching établissement/formation plus précis.</p></div>
+  <div class="section">
+    <div class="profile-group"><h3>Essentiel</h3>
+      <div class="field"><label>Ville d'études</label><select id="f-ville"></select></div>
+      <div class="field"><label>Ville de résidence</label><input id="f-ville-residence" placeholder="Ex. Grenoble"></div>
+      <div class="field two-col"><div><label>Âge</label><input type="number" id="f-age" placeholder="20"></div><div><label>Niveau</label><select id="f-niveau"><option value="">Choisir</option><option>L1</option><option>L2</option><option>L3</option><option>M1</option><option>M2</option><option>BTS 1re année</option><option>BTS 2e année</option><option>CPGE 1re année</option><option>CPGE 2e année</option><option>BUT 1re année</option><option>BUT 2e année</option><option>BUT 3e année</option></select></div></div>
+      <div class="field"><label>Boursier</label><div class="toggle-row"><button class="toggle-btn" data-field="boursier" data-value="oui">Oui</button><button class="toggle-btn" data-field="boursier" data-value="non">Non</button></div></div>
+      <div class="field"><label>Alternant</label><div class="toggle-row"><button class="toggle-btn" data-field="alternant" data-value="oui">Oui</button><button class="toggle-btn" data-field="alternant" data-value="non">Non</button></div></div>
     </div>
 
-    <div class="field">
-      <label>Âge</label>
-      <input type="number" id="f-age" placeholder="20">
+    <div class="profile-group"><h3>Pour affiner</h3>
+      <div class="field"><label>Établissement</label><select id="f-etablissement"></select></div>
+      <div class="field"><label>Formation</label><select id="f-formation"></select></div>
+      <div class="field"><label>Logement</label><select id="f-logement"><option value="">Non renseigné</option><option>chez les parents</option><option>résidence CROUS</option><option>location seul</option><option>colocation</option><option>résidence privée</option></select></div>
+      <div class="field"><label>Transport principal</label><select id="f-transport"><option value="">Non renseigné</option><option>transports en commun</option><option>vélo</option><option>voiture</option><option>train</option><option>marche</option></select></div>
+      <div class="field"><label>Quotient familial CAF (optionnel)</label><input type="number" id="f-qf" placeholder="Uniquement pour les tarifs solidaires"></div>
     </div>
-
-    <div class="field">
-      <label>Niveau d'étude</label>
-      <select id="f-niveau">
-        <option value="">Choisir</option>
-        <option>L1</option><option>L2</option><option>L3</option>
-        <option>M1</option><option>M2</option>
-        <option>BTS 1re année</option><option>BTS 2e année</option>
-        <option>CPGE 1re année</option><option>CPGE 2e année</option>
-        <option>BUT 1re année</option>
-      </select>
-    </div>
-
-    <div class="field">
-      <label>Boursier</label>
-      <div class="toggle-row">
-        <div class="toggle-btn" data-field="boursier" data-value="oui">Oui</div>
-        <div class="toggle-btn active" data-field="boursier" data-value="non">Non</div>
-      </div>
-    </div>
-
-    <div class="field">
-      <label>Alternant</label>
-      <div class="toggle-row">
-        <div class="toggle-btn" data-field="alternant" data-value="oui">Oui</div>
-        <div class="toggle-btn active" data-field="alternant" data-value="non">Non</div>
-      </div>
-    </div>
-
-    <button class="btn-primary" id="save-profile">Enregistrer mon profil</button>
-
-    <div class="upgrade-banner" style="margin-top:24px; margin-left:0; margin-right:0;">
-      <b>Version Premium</b> — 1,99€/mois<br><br>
-      Débloque : matching complet sur toutes les catégories, données locales détaillées, deadlines par établissement/formation, rappels automatiques.<br><br>
-      <span style="color:var(--muted);">L'intégration de paiement (Stripe) n'est pas encore branchée dans ce prototype — à connecter une fois l'app hébergée.</span>
-    </div>
+    <button class="btn-primary" id="save-profile">Mettre à jour mon CampusFlow</button>
+    <div class="privacy-note">Dans cette version, ton profil reste uniquement dans le stockage local de ton navigateur.</div>
   </div>
 </div>
 
-<!-- ============ DETAIL SHEET ============ -->
-<div class="sheet-overlay" id="sheet-overlay">
-  <div class="sheet">
-    <div class="sheet-close"></div>
-    <div id="sheet-content"></div>
-  </div>
-</div>
-
+<div class="sheet-overlay" id="sheet-overlay"><div class="sheet"><div class="sheet-close"></div><div id="sheet-content"></div></div></div>
 <div class="bottom-nav">
-  <button class="nav-item active" data-nav="accueil"><span class="nav-icon">🏠</span>Accueil</button>
-  <button class="nav-item" data-nav="opportunites"><span class="nav-icon">🔎</span>Opportunités</button>
-  <button class="nav-item" data-nav="planning"><span class="nav-icon">📅</span>Planning</button>
-  <button class="nav-item" data-nav="profil"><span class="nav-icon">🧑‍🎓</span>Profil</button>
+  <button class="nav-item active" data-nav="accueil"><span class="nav-icon">⌂</span>Accueil</button>
+  <button class="nav-item" data-nav="opportunites"><span class="nav-icon">⌕</span>Opportunités</button>
+  <button class="nav-item" data-nav="planning"><span class="nav-icon">✓</span>Planning</button>
+  <button class="nav-item" data-nav="profil"><span class="nav-icon">◎</span>Profil</button>
 </div>
-
 <script src="app.js"></script>
 </body>
 </html>
