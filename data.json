@@ -1727,6 +1727,46 @@
       "date_debut": "2026-09-01",
       "date_fin": null,
       "urgence_indicative": "🟢 informatif"
+    },
+    {
+      "id": "DL-013",
+      "titre": "Vérifier inscription administrative et pièces justificatives",
+      "description": "Contrôler dans ton espace établissement que ton inscription administrative est finalisée et que les pièces demandées ont été validées.",
+      "niveau": "établissement",
+      "ville_ou_perimetre": "Grenoble",
+      "date_debut": "2026-08-22",
+      "date_fin": "2026-09-15",
+      "urgence_indicative": "🟠 action recommandée"
+    },
+    {
+      "id": "DL-014",
+      "titre": "CVEC — vérifier attestation 2026-2027",
+      "description": "Télécharger ou retrouver ton attestation CVEC et vérifier qu’elle est disponible pour l’inscription.",
+      "niveau": "national",
+      "ville_ou_perimetre": "France entière",
+      "date_debut": "2026-08-22",
+      "date_fin": "2026-09-15",
+      "urgence_indicative": "🟠 action recommandée"
+    },
+    {
+      "id": "DL-015",
+      "titre": "Transport — vérifier le tarif étudiant M réso",
+      "description": "Comparer ton abonnement actuel aux tarifs jeunes/étudiants et à la tarification solidaire selon ta situation.",
+      "niveau": "local",
+      "ville_ou_perimetre": "Grenoble",
+      "date_debut": "2026-08-22",
+      "date_fin": "2026-09-30",
+      "urgence_indicative": "🟠 action recommandée"
+    },
+    {
+      "id": "DL-016",
+      "titre": "CAF logement — vérifier ou mettre à jour le dossier",
+      "description": "Si tu loues un logement, vérifier la simulation et les informations CAF après l’emménagement.",
+      "niveau": "national",
+      "ville_ou_perimetre": "France entière",
+      "date_debut": "2026-08-22",
+      "date_fin": "2026-10-01",
+      "urgence_indicative": "🟢 selon situation"
     }
   ],
   "establishments": [

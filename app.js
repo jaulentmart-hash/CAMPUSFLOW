@@ -13,7 +13,7 @@ function saveCompleted(){ localStorage.setItem('campusflow_completed', JSON.stri
 
 const FALLBACK_CITIES = ['Paris','Lyon','Lille','Bordeaux','Toulouse','Grenoble'];
 
-fetch('data.json?v=3.0')
+fetch('data.json?v=3.1')
   .then(r=>{ if(!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then(json=>{ DATA={...DATA,...json}; init(); })
   .catch(err=>{
@@ -82,15 +82,24 @@ function directSaving(o){
   return annualize(amountMax(o),o);
 }
 function euro(n){ return `${Math.round(n).toLocaleString('fr-FR')} €`; }
+function isEmergencyAid(o){ return /FNAU|urgence/i.test(`${o.nom||''} ${o.categorie||''}`); }
+function isRegularGrant(o){ return /Bourse CROUS sur critères sociaux/i.test(o.nom||''); }
+function isAnnualEmergency(o){ return /FNAU.*annuelle/i.test(o.nom||''); }
+function isHousingAid(o){ return /APL|ALS|ALF/i.test(o.nom||''); }
 function financialSummary(list){
   const aidItems=list.filter(o=>financialClass(o)==='aid');
-  const aids=aidItems.reduce((s,o)=>s+potentialAid(o),0);
+  const regular=aidItems.filter(o=>!isEmergencyAid(o));
+  const emergency=aidItems.filter(isEmergencyAid);
+  // Ne jamais additionner automatiquement des aides incompatibles ou conditionnelles.
+  // On affiche plutôt le meilleur montant d'aide régulière et les cas exceptionnels séparément.
+  const primaryAid=regular.sort((a,b)=>potentialAid(b)-potentialAid(a))[0] || null;
+  const primaryAidAmount=primaryAid ? potentialAid(primaryAid) : 0;
   const savings=list.reduce((s,o)=>s+directSaving(o),0);
   const financing=list.filter(o=>financialClass(o)==='financing').reduce((m,o)=>Math.max(m,amountMax(o)),0);
   const benefitItems=list.filter(o=>['benefit','cost','saving'].includes(financialClass(o)));
   const services=list.filter(o=>financialClass(o)==='service');
-  const needsCheck=list.filter(o=>!(o.statut_verification||'').includes('🟢'));
-  return {aids,savings,financing,aidCount:aidItems.length,benefitCount:benefitItems.length,serviceCount:services.length,checkCount:needsCheck.length,total:list.length};
+  const needsCheck=list.filter(o=>confidence(o)!=='Profil compatible');
+  return {primaryAid,primaryAidAmount,emergencyCount:emergency.length,savings,financing,aidCount:aidItems.length,benefitCount:benefitItems.length,serviceCount:services.length,checkCount:needsCheck.length,total:list.length};
 }
 function renderIdCard(){
   $('#id-name').textContent=PROFILE.ville?`Étudiant·e à ${PROFILE.ville}`:'Configure ton profil';
@@ -100,8 +109,10 @@ function renderIdCard(){
 function renderHome(){
   const compatible=DATA.opportunities.filter(opportunityIsCompatible);
   const s=financialSummary(compatible);
-  $('#savings-amount').textContent=s.aids?`Jusqu’à ${euro(s.aids)}`:'0 €';
-  $('#savings-count').textContent=s.aidCount?`${s.aidCount} aide${s.aidCount>1?'s':''} / exonération${s.aidCount>1?'s':''} identifiée${s.aidCount>1?'s':''}. Montants potentiels, jamais garantis.`:'Aucune aide financière chiffrée détectée avec ce profil.';
+  $('#savings-amount').textContent=s.aidCount?`${s.aidCount} aide${s.aidCount>1?'s':''} à étudier`:'Aucune aide détectée';
+  const mainAid=s.primaryAid ? `${s.primaryAid.nom} : jusqu’à ${euro(s.primaryAidAmount)}` : 'Aucune aide régulière chiffrée';
+  const emergency=s.emergencyCount ? ` · ${s.emergencyCount} aide${s.emergencyCount>1?'s':''} exceptionnelle${s.emergencyCount>1?'s':''} selon situation` : '';
+  $('#savings-count').textContent=`${mainAid}${emergency}. Les montants incompatibles ne sont jamais additionnés.`;
   $('#benefit-amount').textContent=s.savings?euro(s.savings):'Non chiffré';
   $('#financing-amount').textContent=s.financing?`Jusqu’à ${euro(s.financing)}`:'Aucun';
   $('#opportunity-count').textContent=String(s.total);
@@ -123,9 +134,10 @@ function renderHome(){
 }
 function scoreOpportunity(o){ return (financialClass(o)==='aid'?30:0) + (confidence(o)==='Profil compatible'?20:0) + (isNational(o)?0:10) + ((o.statut_verification||'').includes('🟢')?5:0); }
 
-let activeVille='Toutes', activeCategorie='Toutes', activeType='Toutes';
+let activeVille='Toutes', activeCategorie='Toutes', activeType='Toutes', activeProfile='Mon profil';
 function renderFilters(){
-  makeChips('#filter-ville',['Toutes',...new Set(DATA.opportunities.map(o=>o.ville).filter(Boolean))],activeVille,v=>{activeVille=v;renderFilters();renderOpportunities();});
+  makeChips('#filter-profile',['Mon profil','Tout explorer'],activeProfile,v=>{activeProfile=v;renderFilters();renderOpportunities();});
+  makeChips('#filter-ville',['Toutes',...new Set(DATA.opportunities.map(o=>o.ville).filter(Boolean))],activeVille,v=>{activeVille=v;activeProfile='Tout explorer';renderFilters();renderOpportunities();});
   makeChips('#filter-categorie',['Toutes',...new Set(DATA.opportunities.map(o=>o.categorie).filter(Boolean))],activeCategorie,v=>{activeCategorie=v;renderFilters();renderOpportunities();});
   makeChips('#filter-type',['Toutes','Aides','Avantages','Financements','Services'],activeType,v=>{activeType=v;renderFilters();renderOpportunities();});
 }
@@ -133,7 +145,8 @@ function makeChips(sel,items,active,cb){ const el=$(sel); el.innerHTML=''; items
 function typeMatches(o){ const fc=financialClass(o); if(activeType==='Toutes')return true; if(activeType==='Aides')return fc==='aid'; if(activeType==='Avantages')return ['benefit','cost','saving'].includes(fc); if(activeType==='Financements')return fc==='financing'; return fc==='service'; }
 function renderOpportunities(){
   const list=$('#opp-list'); list.innerHTML=''; let items=DATA.opportunities.slice();
-  if(activeVille!=='Toutes')items=items.filter(o=>o.ville===activeVille||isNational(o));
+  if(activeProfile==='Mon profil') items=items.filter(opportunityIsCompatible);
+  else if(activeVille!=='Toutes')items=items.filter(o=>o.ville===activeVille||isNational(o));
   if(activeCategorie!=='Toutes')items=items.filter(o=>o.categorie===activeCategorie);
   items=items.filter(typeMatches);
   const q=($('#opp-search')?.value||'').trim().toLowerCase();
@@ -192,13 +205,13 @@ function renderProfileForm(){
  $('#f-ville').innerHTML='<option value="">Choisir une ville</option>'+cities.map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('');
  $('#f-ville').value=PROFILE.ville||''; $('#f-ville-residence').value=PROFILE.villeResidence||''; $('#f-age').value=PROFILE.age||''; $('#f-niveau').value=PROFILE.niveau||''; $('#f-logement').value=PROFILE.logement||''; $('#f-transport').value=PROFILE.transport||''; $('#f-qf').value=PROFILE.qf||'';
  updateEstablishments();
- $('#f-ville').onchange=()=>{ PROFILE.ville=$('#f-ville').value; updateEstablishments(); };
+ $('#f-ville').onchange=()=>{ PROFILE.ville=$('#f-ville').value; updateEstablishments(); }; $('#f-niveau').onchange=()=>{ PROFILE.niveau=$('#f-niveau').value; updateFormations(); };
  $('#f-etablissement').onchange=()=>{ PROFILE.etablissement=$('#f-etablissement').value; updateFormations(); };
  $$('.toggle-btn').forEach(btn=>{const field=btn.dataset.field,value=btn.dataset.value;btn.classList.toggle('active',PROFILE[field]===value);btn.onclick=()=>{PROFILE[field]=value;$$(`.toggle-btn[data-field="${field}"]`).forEach(b=>b.classList.toggle('active',b===btn));};});
  $('#save-profile').onclick=()=>{PROFILE.ville=$('#f-ville').value;PROFILE.villeResidence=$('#f-ville-residence').value;PROFILE.age=$('#f-age').value;PROFILE.niveau=$('#f-niveau').value;PROFILE.logement=$('#f-logement').value;PROFILE.transport=$('#f-transport').value;PROFILE.qf=$('#f-qf').value;PROFILE.etablissement=$('#f-etablissement').value;PROFILE.formation=$('#f-formation').value;saveProfile();renderIdCard();renderHome();renderDeadlines();navigateTo('accueil');};
 }
 function updateEstablishments(){ const list=DATA.establishments.filter(e=>!PROFILE.ville||e.ville===PROFILE.ville); $('#f-etablissement').innerHTML='<option value="">Choisir (optionnel)</option>'+list.map(e=>`<option value="${e.id}">${escapeHtml(e.nom)}</option>`).join(''); if(list.some(e=>e.id===PROFILE.etablissement))$('#f-etablissement').value=PROFILE.etablissement; else PROFILE.etablissement=''; updateFormations(); }
-function updateFormations(){ const list=DATA.formations.filter(f=>f.etablissement_id===PROFILE.etablissement); $('#f-formation').innerHTML='<option value="">Choisir (optionnel)</option>'+list.map(f=>`<option value="${f.id}">${escapeHtml(f.nom)}</option>`).join(''); if(list.some(f=>f.id===PROFILE.formation))$('#f-formation').value=PROFILE.formation; else PROFILE.formation=''; }
+function updateFormations(){ const level=PROFILE.niveau||$('#f-niveau')?.value||''; let list=DATA.formations.filter(f=>f.etablissement_id===PROFILE.etablissement); if(level) list=list.filter(f=>!f.niveau || f.niveau===level || (level==='L1' && ['L1','1re année'].includes(f.niveau))); $('#f-formation').innerHTML='<option value="">Choisir (optionnel)</option>'+list.map(f=>`<option value="${f.id}">${escapeHtml(f.nom)}</option>`).join(''); if(list.some(f=>f.id===PROFILE.formation))$('#f-formation').value=PROFILE.formation; else PROFILE.formation=''; }
 
 function bindNav(){ $$('[data-nav]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();navigateTo(el.dataset.nav);})); }
 function navigateTo(page){ $$('.page').forEach(p=>p.classList.remove('active')); $(`#page-${page}`)?.classList.add('active'); $$('.nav-item').forEach(n=>n.classList.toggle('active',n.dataset.nav===page)); window.scrollTo(0,0); }
