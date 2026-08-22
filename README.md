@@ -69,3 +69,7 @@ Correction structurelle des cursus médecine Grenoble (PASS, DFGSM2, DFGSM3), de
 
 ## V3.8 — formations Grenoble
 Parcours profil refondu et 159 nouvelles entrées cursus/année Grenoble ajoutées à partir des catalogues officiels UGA/IUT/Grenoble INP.
+
+
+## V4 Grenoble bêta
+Accueil priorisé, dates clés détaillées et cliquables, liens officiels directs, ajout Google Agenda, notifications web expérimentales, correction du matching DFGSM2/DFGSM3 et calendrier UGA 2026-2027.

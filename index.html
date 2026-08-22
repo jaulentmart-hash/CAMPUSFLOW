@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#f5f7fb">
 <title>CampusFlow — ton copilote étudiant</title>
-<link rel="stylesheet" href="style.css?v=3.8">
+<link rel="stylesheet" href="style.css?v=4.0">
 </head>
 <body>
 <header class="app-header">
@@ -29,7 +29,11 @@
   </div>
 
   <div class="coverage-note" id="coverage-note" hidden></div>
-
+  <section class="focus-grid">
+    <button class="focus-card focus-deadline" data-nav="planning"><span class="focus-icon">◷</span><span><small>PROCHAINE ÉCHÉANCE</small><strong id="focus-deadline-title">Complète ton profil</strong><em id="focus-deadline-date">—</em></span></button>
+    <button class="focus-card focus-aid" data-nav="opportunites"><span class="focus-icon">€</span><span><small>AIDE À REGARDER</small><strong id="focus-aid-title">À identifier</strong><em id="focus-aid-meta">Selon ton profil</em></span></button>
+    <button class="focus-card focus-benefit" data-nav="opportunites"><span class="focus-icon">%</span><span><small>BON PLAN LOCAL</small><strong id="focus-benefit-title">À identifier</strong><em id="focus-benefit-meta">Selon ta ville</em></span></button>
+  </section>
   <section class="hero-card">
     <div class="hero-copy">
       <span class="hero-kicker">Synthèse personnalisée</span>
@@ -76,7 +80,8 @@
 </section>
 
 <section class="page" id="page-planning">
-  <div class="page-title-row"><div><div class="eyebrow">PLANNING</div><h1>Mes démarches</h1><p>Classe tes échéances, avance et coche ce qui est terminé.</p></div></div>
+  <div class="page-title-row"><div><div class="eyebrow">PLANNING</div><h1>Mes dates clés</h1><p>Ouvre une échéance pour voir exactement quoi faire et la source officielle.</p></div><button class="secondary-btn notification-btn" id="enable-notifications">Activer les rappels</button></div>
+  <div class="calendar-summary" id="calendar-summary"></div>
   <div class="planning-grid">
     <section class="panel"><div class="urgency-title"><span class="urgency-badge urgent">Urgent</span><span>≤ 14 jours</span></div><div id="deadlines-red" class="stack-list"></div></section>
     <section class="panel"><div class="urgency-title"><span class="urgency-badge soon">Cette période</span><span>≤ 60 jours</span></div><div id="deadlines-orange" class="stack-list"></div></section>
@@ -118,6 +123,6 @@
 </main>
 
 <div class="sheet-overlay" id="sheet-overlay"><div class="sheet"><button class="sheet-x" id="sheet-x">×</button><div id="sheet-content"></div></div></div>
-<script src="app.js?v=3.8"></script>
+<script src="app.js?v=4.0"></script>
 </body>
 </html>
